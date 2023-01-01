@@ -47,11 +47,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Center.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Center.Designer.cs">
+      <DependentUpon>Center.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Espace_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Espace_Admin.Designer.cs">
+      <DependentUpon>Espace_Admin.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -61,8 +67,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Center.resx">
+      <DependentUpon>Center.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Espace_Admin.resx">
+      <DependentUpon>Espace_Admin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -94,6 +103,7 @@
     <Content Include="dtbs.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="file.xml" />
     <None Include="Resources\Best-School-in-Meerut-1 %281%29.png" />
     <None Include="Resources\mqdefault.jpg" />
     <None Include="Resources\Education-School-Logo-Design-Vector-Graphics-14913737-1.jpg" />

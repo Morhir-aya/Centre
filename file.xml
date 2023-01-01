@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Center>
+	<chaine_sqlserver>
+		Data Source=DESKTOP-BAEPGCE;Initial Catalog=Center;Integrated Security=True
+	</chaine_sqlserver>
+</Center>
