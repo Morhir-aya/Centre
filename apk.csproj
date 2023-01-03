@@ -68,6 +68,7 @@
     <Compile Include="Center.Designer.cs">
       <DependentUpon>Center.cs</DependentUpon>
     </Compile>
+    <Compile Include="colors.cs" />
     <Compile Include="Espace_Admin.cs">
       <SubType>Form</SubType>
     </Compile>
