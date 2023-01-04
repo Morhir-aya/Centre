@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panelpp3 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.lbltextpp = new System.Windows.Forms.Label();
             this.panelpp4 = new System.Windows.Forms.Panel();
             this.btnAddpp = new System.Windows.Forms.Button();
@@ -36,7 +37,6 @@
             this.textPrenompp = new System.Windows.Forms.TextBox();
             this.labelpp1 = new System.Windows.Forms.Label();
             this.textNompp = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.panelpp3.SuspendLayout();
             this.panelpp4.SuspendLayout();
             this.SuspendLayout();
@@ -52,6 +52,18 @@
             this.panelpp3.Name = "panelpp3";
             this.panelpp3.Size = new System.Drawing.Size(483, 139);
             this.panelpp3.TabIndex = 4;
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(436, -1);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(46, 39);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // lbltextpp
             // 
@@ -129,17 +141,6 @@
             this.textNompp.Name = "textNompp";
             this.textNompp.Size = new System.Drawing.Size(252, 27);
             this.textNompp.TabIndex = 1;
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(436, -1);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(46, 39);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "X";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // Paye_pf
             // 

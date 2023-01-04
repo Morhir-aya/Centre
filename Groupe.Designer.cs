@@ -32,6 +32,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelG = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.labelG = new System.Windows.Forms.Label();
             this.panelG2 = new System.Windows.Forms.Panel();
             this.dataGridViewG = new System.Windows.Forms.DataGridView();
@@ -43,7 +44,6 @@
             this.textSearchG = new System.Windows.Forms.TextBox();
             this.pictureBoxG = new System.Windows.Forms.PictureBox();
             this.btnNewG = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.panelG.SuspendLayout();
             this.panelG2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewG)).BeginInit();
@@ -61,6 +61,18 @@
             this.panelG.Name = "panelG";
             this.panelG.Size = new System.Drawing.Size(841, 129);
             this.panelG.TabIndex = 1;
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(801, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(40, 35);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // labelG
             // 
@@ -210,17 +222,6 @@
             this.btnNewG.Text = "Nouveau";
             this.btnNewG.UseVisualStyleBackColor = false;
             this.btnNewG.Click += new System.EventHandler(this.btnNewG_Click);
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(801, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(40, 35);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "X";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // Groupe
             // 

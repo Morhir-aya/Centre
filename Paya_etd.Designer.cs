@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panelpe3 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.lbltextpe = new System.Windows.Forms.Label();
             this.panelpe4 = new System.Windows.Forms.Panel();
             this.btnAddpe = new System.Windows.Forms.Button();
@@ -36,7 +37,6 @@
             this.textPrenompe = new System.Windows.Forms.TextBox();
             this.labelpe1 = new System.Windows.Forms.Label();
             this.textNompe = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.panelpe3.SuspendLayout();
             this.panelpe4.SuspendLayout();
             this.SuspendLayout();
@@ -52,6 +52,19 @@
             this.panelpe3.Name = "panelpe3";
             this.panelpe3.Size = new System.Drawing.Size(476, 139);
             this.panelpe3.TabIndex = 3;
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.button1.Location = new System.Drawing.Point(433, -1);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(42, 31);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // lbltextpe
             // 
@@ -129,18 +142,6 @@
             this.textNompe.Name = "textNompe";
             this.textNompe.Size = new System.Drawing.Size(252, 27);
             this.textNompe.TabIndex = 1;
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.button1.Location = new System.Drawing.Point(433, -1);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(42, 31);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "X";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // Paya_etd
             // 

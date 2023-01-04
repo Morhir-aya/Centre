@@ -22,5 +22,10 @@ namespace apk
             Paya_etd form = new Paya_etd();
             form.ShowDialog();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

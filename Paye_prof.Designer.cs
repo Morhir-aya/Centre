@@ -32,6 +32,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelpp3 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.labelpp1 = new System.Windows.Forms.Label();
             this.panelpp4 = new System.Windows.Forms.Panel();
             this.dataGridViewpp1 = new System.Windows.Forms.DataGridView();
@@ -43,7 +44,6 @@
             this.textSearchpp = new System.Windows.Forms.TextBox();
             this.pictureBoxpp1 = new System.Windows.Forms.PictureBox();
             this.btnNewpp = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.panelpp3.SuspendLayout();
             this.panelpp4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewpp1)).BeginInit();
@@ -61,6 +61,19 @@
             this.panelpp3.Name = "panelpp3";
             this.panelpp3.Size = new System.Drawing.Size(800, 129);
             this.panelpp3.TabIndex = 2;
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.button1.Location = new System.Drawing.Point(757, -1);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(42, 32);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // labelpp1
             // 
@@ -212,18 +225,6 @@
             this.btnNewpp.Text = "New";
             this.btnNewpp.UseVisualStyleBackColor = false;
             this.btnNewpp.Click += new System.EventHandler(this.btnNewpp_Click);
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.button1.Location = new System.Drawing.Point(757, -1);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(42, 32);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "X";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // Paye_prof
             // 

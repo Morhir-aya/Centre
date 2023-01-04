@@ -27,5 +27,10 @@ namespace apk
             FormGroupe form1 = new FormGroupe();
             form1.ShowDialog();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

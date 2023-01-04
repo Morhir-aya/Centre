@@ -44,9 +44,9 @@
             this.panelLogo = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.PanelTitleBar = new System.Windows.Forms.Panel();
+            this.button7 = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
             this.panelDesktopPane = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -291,6 +291,19 @@
             this.PanelTitleBar.Size = new System.Drawing.Size(811, 98);
             this.PanelTitleBar.TabIndex = 1;
             // 
+            // button7
+            // 
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.button7.Location = new System.Drawing.Point(763, -1);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(43, 36);
+            this.button7.TabIndex = 3;
+            this.button7.Text = "X";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
@@ -311,18 +324,6 @@
             this.panelDesktopPane.Name = "panelDesktopPane";
             this.panelDesktopPane.Size = new System.Drawing.Size(811, 577);
             this.panelDesktopPane.TabIndex = 2;
-            // 
-            // button7
-            // 
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.button7.Location = new System.Drawing.Point(763, -1);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(43, 36);
-            this.button7.TabIndex = 3;
-            this.button7.Text = "X";
-            this.button7.UseVisualStyleBackColor = true;
             // 
             // Espace_Admin
             // 

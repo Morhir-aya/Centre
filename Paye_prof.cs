@@ -22,5 +22,10 @@ namespace apk
             Paye_pf form = new Paye_pf();
             form.ShowDialog();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

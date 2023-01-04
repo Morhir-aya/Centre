@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panelM3 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.lbltextM = new System.Windows.Forms.Label();
             this.panelM4 = new System.Windows.Forms.Panel();
             this.btnAddM = new System.Windows.Forms.Button();
@@ -36,7 +37,6 @@
             this.textPrenomM = new System.Windows.Forms.TextBox();
             this.labelM1 = new System.Windows.Forms.Label();
             this.textNomM = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.panelM3.SuspendLayout();
             this.panelM4.SuspendLayout();
             this.SuspendLayout();
@@ -52,6 +52,19 @@
             this.panelM3.Name = "panelM3";
             this.panelM3.Size = new System.Drawing.Size(497, 139);
             this.panelM3.TabIndex = 2;
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.button1.Location = new System.Drawing.Point(453, -1);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(43, 37);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // lbltextM
             // 
@@ -129,18 +142,6 @@
             this.textNomM.Name = "textNomM";
             this.textNomM.Size = new System.Drawing.Size(252, 27);
             this.textNomM.TabIndex = 1;
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.button1.Location = new System.Drawing.Point(453, -1);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(43, 37);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "X";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // FormMatiere
             // 
