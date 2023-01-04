@@ -22,5 +22,10 @@ namespace apk
             FormMatiere form2 = new FormMatiere();
             form2.ShowDialog();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

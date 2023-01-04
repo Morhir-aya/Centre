@@ -46,6 +46,7 @@
             this.PanelTitleBar = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.panelDesktopPane = new System.Windows.Forms.Panel();
+            this.button7 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -282,6 +283,7 @@
             // 
             this.PanelTitleBar.BackColor = System.Drawing.Color.LightSeaGreen;
             this.PanelTitleBar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanelTitleBar.Controls.Add(this.button7);
             this.PanelTitleBar.Controls.Add(this.lblTitle);
             this.PanelTitleBar.Location = new System.Drawing.Point(292, 1);
             this.PanelTitleBar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -310,6 +312,18 @@
             this.panelDesktopPane.Size = new System.Drawing.Size(811, 577);
             this.panelDesktopPane.TabIndex = 2;
             // 
+            // button7
+            // 
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.button7.Location = new System.Drawing.Point(763, -1);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(43, 36);
+            this.button7.TabIndex = 3;
+            this.button7.Text = "X";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
             // Espace_Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -319,8 +333,10 @@
             this.Controls.Add(this.panelDesktopPane);
             this.Controls.Add(this.PanelTitleBar);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Espace_Admin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Espace_Admin";
             this.Load += new System.EventHandler(this.Espace_Admin_Load);
             this.panel1.ResumeLayout(false);
@@ -358,5 +374,6 @@
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panelDesktopPane;
+        private System.Windows.Forms.Button button7;
     }
 }

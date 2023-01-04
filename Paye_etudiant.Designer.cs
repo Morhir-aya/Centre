@@ -28,21 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelpe3 = new System.Windows.Forms.Panel();
             this.labelpe1 = new System.Windows.Forms.Label();
             this.panelpe4 = new System.Windows.Forms.Panel();
             this.dataGridViewpe1 = new System.Windows.Forms.DataGridView();
-            this.textSearchpe = new System.Windows.Forms.TextBox();
-            this.btnNewpe = new System.Windows.Forms.Button();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.textSearchpe = new System.Windows.Forms.TextBox();
             this.pictureBoxpe1 = new System.Windows.Forms.PictureBox();
+            this.btnNewpe = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panelpe3.SuspendLayout();
             this.panelpe4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewpe1)).BeginInit();
@@ -53,6 +54,7 @@
             // 
             this.panelpe3.BackColor = System.Drawing.Color.LightSeaGreen;
             this.panelpe3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelpe3.Controls.Add(this.button1);
             this.panelpe3.Controls.Add(this.labelpe1);
             this.panelpe3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelpe3.Location = new System.Drawing.Point(0, 0);
@@ -117,35 +119,11 @@
             this.dataGridViewpe1.Size = new System.Drawing.Size(649, 255);
             this.dataGridViewpe1.TabIndex = 0;
             // 
-            // textSearchpe
-            // 
-            this.textSearchpe.BackColor = System.Drawing.SystemColors.Control;
-            this.textSearchpe.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textSearchpe.Location = new System.Drawing.Point(362, 43);
-            this.textSearchpe.Name = "textSearchpe";
-            this.textSearchpe.Size = new System.Drawing.Size(242, 27);
-            this.textSearchpe.TabIndex = 2;
-            // 
-            // btnNewpe
-            // 
-            this.btnNewpe.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.btnNewpe.FlatAppearance.BorderSize = 0;
-            this.btnNewpe.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnNewpe.Font = new System.Drawing.Font("Cooper Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNewpe.ForeColor = System.Drawing.Color.White;
-            this.btnNewpe.Location = new System.Drawing.Point(58, 39);
-            this.btnNewpe.Name = "btnNewpe";
-            this.btnNewpe.Size = new System.Drawing.Size(108, 35);
-            this.btnNewpe.TabIndex = 1;
-            this.btnNewpe.Text = "New";
-            this.btnNewpe.UseVisualStyleBackColor = false;
-            this.btnNewpe.Click += new System.EventHandler(this.btnNewpe_Click);
-            // 
             // Column1
             // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Column1.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Column1.DefaultCellStyle = dataGridViewCellStyle1;
             this.Column1.HeaderText = "Id_payement";
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
@@ -167,13 +145,13 @@
             // 
             // Column7
             // 
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
-            this.Column7.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            this.Column7.DefaultCellStyle = dataGridViewCellStyle2;
             this.Column7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Column7.HeaderText = "";
             this.Column7.MinimumWidth = 6;
@@ -183,19 +161,28 @@
             // 
             // Column8
             // 
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.LightSeaGreen;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.LightSeaGreen;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
-            this.Column8.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.LightSeaGreen;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.LightSeaGreen;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            this.Column8.DefaultCellStyle = dataGridViewCellStyle3;
             this.Column8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Column8.HeaderText = "";
             this.Column8.MinimumWidth = 6;
             this.Column8.Name = "Column8";
             this.Column8.ReadOnly = true;
             this.Column8.Text = "Supprimer";
+            // 
+            // textSearchpe
+            // 
+            this.textSearchpe.BackColor = System.Drawing.SystemColors.Control;
+            this.textSearchpe.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textSearchpe.Location = new System.Drawing.Point(362, 43);
+            this.textSearchpe.Name = "textSearchpe";
+            this.textSearchpe.Size = new System.Drawing.Size(242, 27);
+            this.textSearchpe.TabIndex = 2;
             // 
             // pictureBoxpe1
             // 
@@ -211,6 +198,33 @@
             this.pictureBoxpe1.TabIndex = 2;
             this.pictureBoxpe1.TabStop = false;
             // 
+            // btnNewpe
+            // 
+            this.btnNewpe.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnNewpe.FlatAppearance.BorderSize = 0;
+            this.btnNewpe.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnNewpe.Font = new System.Drawing.Font("Cooper Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNewpe.ForeColor = System.Drawing.Color.White;
+            this.btnNewpe.Location = new System.Drawing.Point(58, 39);
+            this.btnNewpe.Name = "btnNewpe";
+            this.btnNewpe.Size = new System.Drawing.Size(108, 35);
+            this.btnNewpe.TabIndex = 1;
+            this.btnNewpe.Text = "New";
+            this.btnNewpe.UseVisualStyleBackColor = false;
+            this.btnNewpe.Click += new System.EventHandler(this.btnNewpe_Click);
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.button1.Location = new System.Drawing.Point(757, -1);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(42, 38);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Paye_etudiant
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -219,6 +233,7 @@
             this.ClientSize = new System.Drawing.Size(800, 549);
             this.Controls.Add(this.panelpe4);
             this.Controls.Add(this.panelpe3);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Paye_etudiant";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Paye_etudiant";
@@ -246,5 +261,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewButtonColumn Column7;
         private System.Windows.Forms.DataGridViewButtonColumn Column8;
+        private System.Windows.Forms.Button button1;
     }
 }

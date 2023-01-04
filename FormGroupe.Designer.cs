@@ -36,6 +36,7 @@
             this.textPrenomG = new System.Windows.Forms.TextBox();
             this.labelG1 = new System.Windows.Forms.Label();
             this.textNomG = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.panelG3.SuspendLayout();
             this.panelG4.SuspendLayout();
             this.SuspendLayout();
@@ -44,6 +45,7 @@
             // 
             this.panelG3.BackColor = System.Drawing.Color.LightSeaGreen;
             this.panelG3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelG3.Controls.Add(this.button1);
             this.panelG3.Controls.Add(this.lbltextG);
             this.panelG3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelG3.Location = new System.Drawing.Point(0, 0);
@@ -131,6 +133,18 @@
             this.textNomG.Size = new System.Drawing.Size(252, 27);
             this.textNomG.TabIndex = 1;
             // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.button1.Location = new System.Drawing.Point(445, -1);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(43, 35);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // FormGroupe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -139,6 +153,7 @@
             this.ClientSize = new System.Drawing.Size(489, 468);
             this.Controls.Add(this.panelG4);
             this.Controls.Add(this.panelG3);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormGroupe";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormGroupe";
@@ -160,5 +175,6 @@
         private System.Windows.Forms.TextBox textPrenomG;
         private System.Windows.Forms.Label labelG1;
         private System.Windows.Forms.TextBox textNomG;
+        private System.Windows.Forms.Button button1;
     }
 }

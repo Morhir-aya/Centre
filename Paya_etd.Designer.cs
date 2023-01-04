@@ -36,6 +36,7 @@
             this.textPrenompe = new System.Windows.Forms.TextBox();
             this.labelpe1 = new System.Windows.Forms.Label();
             this.textNompe = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.panelpe3.SuspendLayout();
             this.panelpe4.SuspendLayout();
             this.SuspendLayout();
@@ -44,6 +45,7 @@
             // 
             this.panelpe3.BackColor = System.Drawing.Color.LightSeaGreen;
             this.panelpe3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelpe3.Controls.Add(this.button1);
             this.panelpe3.Controls.Add(this.lbltextpe);
             this.panelpe3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelpe3.Location = new System.Drawing.Point(0, 0);
@@ -128,6 +130,18 @@
             this.textNompe.Size = new System.Drawing.Size(252, 27);
             this.textNompe.TabIndex = 1;
             // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.button1.Location = new System.Drawing.Point(433, -1);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(42, 31);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Paya_etd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -136,6 +150,7 @@
             this.ClientSize = new System.Drawing.Size(476, 468);
             this.Controls.Add(this.panelpe4);
             this.Controls.Add(this.panelpe3);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Paya_etd";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Paya_etd";
@@ -157,5 +172,6 @@
         private System.Windows.Forms.TextBox textPrenompe;
         private System.Windows.Forms.Label labelpe1;
         private System.Windows.Forms.TextBox textNompe;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -35,14 +35,15 @@
             this.labelpp1 = new System.Windows.Forms.Label();
             this.panelpp4 = new System.Windows.Forms.Panel();
             this.dataGridViewpp1 = new System.Windows.Forms.DataGridView();
-            this.textSearchpp = new System.Windows.Forms.TextBox();
-            this.btnNewpp = new System.Windows.Forms.Button();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.textSearchpp = new System.Windows.Forms.TextBox();
             this.pictureBoxpp1 = new System.Windows.Forms.PictureBox();
+            this.btnNewpp = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panelpp3.SuspendLayout();
             this.panelpp4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewpp1)).BeginInit();
@@ -53,6 +54,7 @@
             // 
             this.panelpp3.BackColor = System.Drawing.Color.LightSeaGreen;
             this.panelpp3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelpp3.Controls.Add(this.button1);
             this.panelpp3.Controls.Add(this.labelpp1);
             this.panelpp3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelpp3.Location = new System.Drawing.Point(0, 0);
@@ -117,30 +119,6 @@
             this.dataGridViewpp1.Size = new System.Drawing.Size(649, 243);
             this.dataGridViewpp1.TabIndex = 0;
             // 
-            // textSearchpp
-            // 
-            this.textSearchpp.BackColor = System.Drawing.SystemColors.Control;
-            this.textSearchpp.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textSearchpp.Location = new System.Drawing.Point(362, 43);
-            this.textSearchpp.Name = "textSearchpp";
-            this.textSearchpp.Size = new System.Drawing.Size(242, 27);
-            this.textSearchpp.TabIndex = 2;
-            // 
-            // btnNewpp
-            // 
-            this.btnNewpp.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.btnNewpp.FlatAppearance.BorderSize = 0;
-            this.btnNewpp.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnNewpp.Font = new System.Drawing.Font("Cooper Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNewpp.ForeColor = System.Drawing.Color.White;
-            this.btnNewpp.Location = new System.Drawing.Point(58, 39);
-            this.btnNewpp.Name = "btnNewpp";
-            this.btnNewpp.Size = new System.Drawing.Size(108, 35);
-            this.btnNewpp.TabIndex = 1;
-            this.btnNewpp.Text = "New";
-            this.btnNewpp.UseVisualStyleBackColor = false;
-            this.btnNewpp.Click += new System.EventHandler(this.btnNewpp_Click);
-            // 
             // Column1
             // 
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -197,6 +175,15 @@
             this.Column8.ReadOnly = true;
             this.Column8.Text = "Supprimer";
             // 
+            // textSearchpp
+            // 
+            this.textSearchpp.BackColor = System.Drawing.SystemColors.Control;
+            this.textSearchpp.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textSearchpp.Location = new System.Drawing.Point(362, 43);
+            this.textSearchpp.Name = "textSearchpp";
+            this.textSearchpp.Size = new System.Drawing.Size(242, 27);
+            this.textSearchpp.TabIndex = 2;
+            // 
             // pictureBoxpp1
             // 
             this.pictureBoxpp1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -211,6 +198,33 @@
             this.pictureBoxpp1.TabIndex = 2;
             this.pictureBoxpp1.TabStop = false;
             // 
+            // btnNewpp
+            // 
+            this.btnNewpp.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnNewpp.FlatAppearance.BorderSize = 0;
+            this.btnNewpp.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnNewpp.Font = new System.Drawing.Font("Cooper Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNewpp.ForeColor = System.Drawing.Color.White;
+            this.btnNewpp.Location = new System.Drawing.Point(58, 39);
+            this.btnNewpp.Name = "btnNewpp";
+            this.btnNewpp.Size = new System.Drawing.Size(108, 35);
+            this.btnNewpp.TabIndex = 1;
+            this.btnNewpp.Text = "New";
+            this.btnNewpp.UseVisualStyleBackColor = false;
+            this.btnNewpp.Click += new System.EventHandler(this.btnNewpp_Click);
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.button1.Location = new System.Drawing.Point(757, -1);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(42, 32);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Paye_prof
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -219,6 +233,7 @@
             this.ClientSize = new System.Drawing.Size(800, 521);
             this.Controls.Add(this.panelpp4);
             this.Controls.Add(this.panelpp3);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Paye_prof";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Paye_prof";
@@ -246,5 +261,6 @@
         private System.Windows.Forms.TextBox textSearchpp;
         private System.Windows.Forms.PictureBox pictureBoxpp1;
         private System.Windows.Forms.Button btnNewpp;
+        private System.Windows.Forms.Button button1;
     }
 }

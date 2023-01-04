@@ -36,6 +36,7 @@
             this.textPrenompp = new System.Windows.Forms.TextBox();
             this.labelpp1 = new System.Windows.Forms.Label();
             this.textNompp = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.panelpp3.SuspendLayout();
             this.panelpp4.SuspendLayout();
             this.SuspendLayout();
@@ -44,6 +45,7 @@
             // 
             this.panelpp3.BackColor = System.Drawing.Color.LightSeaGreen;
             this.panelpp3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelpp3.Controls.Add(this.button1);
             this.panelpp3.Controls.Add(this.lbltextpp);
             this.panelpp3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelpp3.Location = new System.Drawing.Point(0, 0);
@@ -128,6 +130,17 @@
             this.textNompp.Size = new System.Drawing.Size(252, 27);
             this.textNompp.TabIndex = 1;
             // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(436, -1);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(46, 39);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Paye_pf
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -136,6 +149,7 @@
             this.ClientSize = new System.Drawing.Size(483, 450);
             this.Controls.Add(this.panelpp4);
             this.Controls.Add(this.panelpp3);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Paye_pf";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Paye_pf";
@@ -157,5 +171,6 @@
         private System.Windows.Forms.TextBox textPrenompp;
         private System.Windows.Forms.Label labelpp1;
         private System.Windows.Forms.TextBox textNompp;
+        private System.Windows.Forms.Button button1;
     }
 }
