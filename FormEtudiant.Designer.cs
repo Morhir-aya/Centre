@@ -78,11 +78,12 @@
             this.lbltext.AutoSize = true;
             this.lbltext.Font = new System.Drawing.Font("Cooper Black", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltext.ForeColor = System.Drawing.Color.White;
-            this.lbltext.Location = new System.Drawing.Point(97, 59);
+            this.lbltext.Location = new System.Drawing.Point(115, 64);
             this.lbltext.Name = "lbltext";
-            this.lbltext.Size = new System.Drawing.Size(280, 35);
+            this.lbltext.Size = new System.Drawing.Size(211, 35);
             this.lbltext.TabIndex = 0;
-            this.lbltext.Text = "Ajouter Etudiant";
+            this.lbltext.Text = "Add Student";
+            this.lbltext.Click += new System.EventHandler(this.lbltext_Click);
             // 
             // panel2
             // 
@@ -112,11 +113,11 @@
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Cooper Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(53, 373);
+            this.btnAdd.Location = new System.Drawing.Point(132, 373);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(103, 39);
             this.btnAdd.TabIndex = 6;
-            this.btnAdd.Text = "Ajouter";
+            this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
@@ -127,9 +128,9 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(49, 298);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(81, 20);
+            this.label5.Size = new System.Drawing.Size(53, 20);
             this.label5.TabIndex = 0;
-            this.label5.Text = "Telephone";
+            this.label5.Text = "Phone";
             // 
             // textTel
             // 
@@ -146,9 +147,9 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(49, 97);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 20);
+            this.label4.Size = new System.Drawing.Size(84, 20);
             this.label4.TabIndex = 0;
-            this.label4.Text = "Prénom";
+            this.label4.Text = "Last Name";
             // 
             // textPrenom
             // 
@@ -165,9 +166,9 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(49, 165);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 20);
+            this.label3.Size = new System.Drawing.Size(53, 20);
             this.label3.TabIndex = 0;
-            this.label3.Text = "Groupe";
+            this.label3.Text = "Group";
             // 
             // textGroupe
             // 
@@ -203,9 +204,10 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(49, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 20);
+            this.label1.Size = new System.Drawing.Size(86, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Nom";
+            this.label1.Text = "First Name";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // textNom
             // 

@@ -60,7 +60,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.pictureBox5);
@@ -312,9 +312,9 @@
             this.lblTitle.Location = new System.Drawing.Point(267, 27);
             this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(232, 35);
+            this.lblTitle.Size = new System.Drawing.Size(211, 35);
             this.lblTitle.TabIndex = 2;
-            this.lblTitle.Text = "Espace Admin";
+            this.lblTitle.Text = "Admin space";
             // 
             // panelDesktopPane
             // 

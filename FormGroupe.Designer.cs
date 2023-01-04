@@ -71,11 +71,11 @@
             this.lbltextG.AutoSize = true;
             this.lbltextG.Font = new System.Drawing.Font("Cooper Black", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltextG.ForeColor = System.Drawing.Color.White;
-            this.lbltextG.Location = new System.Drawing.Point(97, 59);
+            this.lbltextG.Location = new System.Drawing.Point(146, 59);
             this.lbltextG.Name = "lbltextG";
-            this.lbltextG.Size = new System.Drawing.Size(257, 35);
+            this.lbltextG.Size = new System.Drawing.Size(186, 35);
             this.lbltextG.TabIndex = 0;
-            this.lbltextG.Text = "Ajouter Groupe";
+            this.lbltextG.Text = "Add Group";
             this.lbltextG.Click += new System.EventHandler(this.lbltext_Click);
             // 
             // panelG4
@@ -99,11 +99,11 @@
             this.btnAddG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddG.Font = new System.Drawing.Font("Cooper Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddG.ForeColor = System.Drawing.Color.White;
-            this.btnAddG.Location = new System.Drawing.Point(53, 186);
+            this.btnAddG.Location = new System.Drawing.Point(144, 189);
             this.btnAddG.Name = "btnAddG";
             this.btnAddG.Size = new System.Drawing.Size(103, 39);
             this.btnAddG.TabIndex = 6;
-            this.btnAddG.Text = "Ajouter";
+            this.btnAddG.Text = "Add";
             this.btnAddG.UseVisualStyleBackColor = false;
             this.btnAddG.Click += new System.EventHandler(this.btnAddG_Click);
             // 
@@ -112,16 +112,16 @@
             this.labelG4.AutoSize = true;
             this.labelG4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelG4.ForeColor = System.Drawing.Color.White;
-            this.labelG4.Location = new System.Drawing.Point(49, 97);
+            this.labelG4.Location = new System.Drawing.Point(68, 98);
             this.labelG4.Name = "labelG4";
-            this.labelG4.Size = new System.Drawing.Size(143, 20);
+            this.labelG4.Size = new System.Drawing.Size(133, 20);
             this.labelG4.TabIndex = 0;
-            this.labelG4.Text = "Nombre d\'etudiant";
+            this.labelG4.Text = "Students Number";
             // 
             // textPrenomG
             // 
             this.textPrenomG.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textPrenomG.Location = new System.Drawing.Point(53, 120);
+            this.textPrenomG.Location = new System.Drawing.Point(72, 121);
             this.textPrenomG.Name = "textPrenomG";
             this.textPrenomG.Size = new System.Drawing.Size(252, 27);
             this.textPrenomG.TabIndex = 2;
@@ -131,17 +131,17 @@
             this.labelG1.AutoSize = true;
             this.labelG1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelG1.ForeColor = System.Drawing.Color.White;
-            this.labelG1.Location = new System.Drawing.Point(49, 29);
+            this.labelG1.Location = new System.Drawing.Point(68, 30);
             this.labelG1.Name = "labelG1";
-            this.labelG1.Size = new System.Drawing.Size(44, 20);
+            this.labelG1.Size = new System.Drawing.Size(51, 20);
             this.labelG1.TabIndex = 0;
-            this.labelG1.Text = "Nom";
+            this.labelG1.Text = "Name";
             this.labelG1.Click += new System.EventHandler(this.labelG1_Click);
             // 
             // textNomG
             // 
             this.textNomG.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textNomG.Location = new System.Drawing.Point(53, 52);
+            this.textNomG.Location = new System.Drawing.Point(72, 53);
             this.textNomG.Name = "textNomG";
             this.textNomG.Size = new System.Drawing.Size(252, 27);
             this.textNomG.TabIndex = 1;

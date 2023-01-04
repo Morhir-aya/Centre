@@ -21,5 +21,15 @@ namespace apk
         {
             this.Close();
         }
+
+        private void btnAddM_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbltextM_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

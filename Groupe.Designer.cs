@@ -36,14 +36,14 @@
             this.labelG = new System.Windows.Forms.Label();
             this.panelG2 = new System.Windows.Forms.Panel();
             this.dataGridViewG = new System.Windows.Forms.DataGridView();
+            this.textSearchG = new System.Windows.Forms.TextBox();
+            this.pictureBoxG = new System.Windows.Forms.PictureBox();
+            this.btnNewG = new System.Windows.Forms.Button();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.textSearchG = new System.Windows.Forms.TextBox();
-            this.pictureBoxG = new System.Windows.Forms.PictureBox();
-            this.btnNewG = new System.Windows.Forms.Button();
             this.panelG.SuspendLayout();
             this.panelG2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewG)).BeginInit();
@@ -79,11 +79,11 @@
             this.labelG.AutoSize = true;
             this.labelG.Font = new System.Drawing.Font("Cooper Black", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelG.ForeColor = System.Drawing.Color.White;
-            this.labelG.Location = new System.Drawing.Point(241, 50);
+            this.labelG.Location = new System.Drawing.Point(302, 52);
             this.labelG.Name = "labelG";
-            this.labelG.Size = new System.Drawing.Size(298, 35);
+            this.labelG.Size = new System.Drawing.Size(198, 35);
             this.labelG.TabIndex = 0;
-            this.labelG.Text = "Gestion de Groupe";
+            this.labelG.Text = "Group Infos";
             this.labelG.Click += new System.EventHandler(this.labelG_Click);
             // 
             // panelG2
@@ -133,25 +133,60 @@
             this.dataGridViewG.Size = new System.Drawing.Size(674, 247);
             this.dataGridViewG.TabIndex = 0;
             // 
+            // textSearchG
+            // 
+            this.textSearchG.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textSearchG.Location = new System.Drawing.Point(413, 43);
+            this.textSearchG.Name = "textSearchG";
+            this.textSearchG.Size = new System.Drawing.Size(242, 27);
+            this.textSearchG.TabIndex = 2;
+            // 
+            // pictureBoxG
+            // 
+            this.pictureBoxG.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBoxG.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBoxG.Image = global::apk.Properties.Resources.search;
+            this.pictureBoxG.Location = new System.Drawing.Point(652, 43);
+            this.pictureBoxG.Name = "pictureBoxG";
+            this.pictureBoxG.Size = new System.Drawing.Size(46, 27);
+            this.pictureBoxG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxG.TabIndex = 2;
+            this.pictureBoxG.TabStop = false;
+            // 
+            // btnNewG
+            // 
+            this.btnNewG.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnNewG.FlatAppearance.BorderSize = 0;
+            this.btnNewG.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnNewG.Font = new System.Drawing.Font("Cooper Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNewG.ForeColor = System.Drawing.Color.White;
+            this.btnNewG.Location = new System.Drawing.Point(58, 39);
+            this.btnNewG.Name = "btnNewG";
+            this.btnNewG.Size = new System.Drawing.Size(108, 35);
+            this.btnNewG.TabIndex = 1;
+            this.btnNewG.Text = "New";
+            this.btnNewG.UseVisualStyleBackColor = false;
+            this.btnNewG.Click += new System.EventHandler(this.btnNewG_Click);
+            // 
             // Column1
             // 
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Column1.DefaultCellStyle = dataGridViewCellStyle1;
-            this.Column1.HeaderText = "#";
+            this.Column1.HeaderText = "Id_Group";
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
             // 
             // Column2
             // 
-            this.Column2.HeaderText = "Nom_Goupe";
+            this.Column2.HeaderText = "Name_Group";
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
             // 
             // Column3
             // 
-            this.Column3.HeaderText = "Nbr_Etudiant";
+            this.Column3.HeaderText = "Nbr_students";
             this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
@@ -188,41 +223,6 @@
             this.Column8.ReadOnly = true;
             this.Column8.Text = "Supprimer";
             // 
-            // textSearchG
-            // 
-            this.textSearchG.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textSearchG.Location = new System.Drawing.Point(413, 43);
-            this.textSearchG.Name = "textSearchG";
-            this.textSearchG.Size = new System.Drawing.Size(242, 27);
-            this.textSearchG.TabIndex = 2;
-            // 
-            // pictureBoxG
-            // 
-            this.pictureBoxG.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBoxG.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBoxG.Image = global::apk.Properties.Resources.search;
-            this.pictureBoxG.Location = new System.Drawing.Point(652, 43);
-            this.pictureBoxG.Name = "pictureBoxG";
-            this.pictureBoxG.Size = new System.Drawing.Size(46, 27);
-            this.pictureBoxG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxG.TabIndex = 2;
-            this.pictureBoxG.TabStop = false;
-            // 
-            // btnNewG
-            // 
-            this.btnNewG.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.btnNewG.FlatAppearance.BorderSize = 0;
-            this.btnNewG.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnNewG.Font = new System.Drawing.Font("Cooper Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNewG.ForeColor = System.Drawing.Color.White;
-            this.btnNewG.Location = new System.Drawing.Point(58, 39);
-            this.btnNewG.Name = "btnNewG";
-            this.btnNewG.Size = new System.Drawing.Size(108, 35);
-            this.btnNewG.TabIndex = 1;
-            this.btnNewG.Text = "Nouveau";
-            this.btnNewG.UseVisualStyleBackColor = false;
-            this.btnNewG.Click += new System.EventHandler(this.btnNewG_Click);
-            // 
             // Groupe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -251,14 +251,14 @@
         private System.Windows.Forms.Label labelG;
         private System.Windows.Forms.Panel panelG2;
         private System.Windows.Forms.DataGridView dataGridViewG;
+        private System.Windows.Forms.TextBox textSearchG;
+        private System.Windows.Forms.PictureBox pictureBoxG;
+        private System.Windows.Forms.Button btnNewG;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewButtonColumn Column7;
         private System.Windows.Forms.DataGridViewButtonColumn Column8;
-        private System.Windows.Forms.TextBox textSearchG;
-        private System.Windows.Forms.PictureBox pictureBoxG;
-        private System.Windows.Forms.Button btnNewG;
-        private System.Windows.Forms.Button button1;
     }
 }
