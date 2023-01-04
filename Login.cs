@@ -76,5 +76,25 @@ namespace apk
             }
             
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("hadi hiya");
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -163,6 +163,26 @@ namespace apk.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap password_76 {
+            get {
+                object obj = ResourceManager.GetObject("password-76", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap password_761 {
+            get {
+                object obj = ResourceManager.GetObject("password-761", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap png_clipart_users_group_logo_others {
             get {
                 object obj = ResourceManager.GetObject("png-clipart-users-group-logo-others", resourceCulture);
@@ -176,6 +196,26 @@ namespace apk.Properties {
         internal static System.Drawing.Bitmap search {
             get {
                 object obj = ResourceManager.GetObject("search", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap username_icon_3 {
+            get {
+                object obj = ResourceManager.GetObject("username-icon-3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap username_icon_31 {
+            get {
+                object obj = ResourceManager.GetObject("username-icon-31", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
