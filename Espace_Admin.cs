@@ -139,5 +139,10 @@ namespace apk
         {
 
         }
+
+        private void panelLogo_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
