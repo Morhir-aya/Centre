@@ -130,9 +130,9 @@
             this.labelpp1.ForeColor = System.Drawing.Color.White;
             this.labelpp1.Location = new System.Drawing.Point(61, 32);
             this.labelpp1.Name = "labelpp1";
-            this.labelpp1.Size = new System.Drawing.Size(96, 20);
+            this.labelpp1.Size = new System.Drawing.Size(83, 20);
             this.labelpp1.TabIndex = 0;
-            this.labelpp1.Text = "Id_Professor";
+            this.labelpp1.Text = "Id_Teacher";
             // 
             // textNompp
             // 
