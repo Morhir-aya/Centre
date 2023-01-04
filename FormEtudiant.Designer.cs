@@ -61,11 +61,11 @@
             // lbltext
             // 
             this.lbltext.AutoSize = true;
-            this.lbltext.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltext.Font = new System.Drawing.Font("Cooper Black", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltext.ForeColor = System.Drawing.Color.White;
-            this.lbltext.Location = new System.Drawing.Point(29, 55);
+            this.lbltext.Location = new System.Drawing.Point(97, 59);
             this.lbltext.Name = "lbltext";
-            this.lbltext.Size = new System.Drawing.Size(155, 28);
+            this.lbltext.Size = new System.Drawing.Size(280, 35);
             this.lbltext.TabIndex = 0;
             this.lbltext.Text = "Ajouter Etudiant";
             // 
@@ -95,7 +95,7 @@
             this.btnAdd.BackColor = System.Drawing.Color.LightSeaGreen;
             this.btnAdd.FlatAppearance.BorderSize = 0;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.White;
             this.btnAdd.Location = new System.Drawing.Point(53, 373);
             this.btnAdd.Name = "btnAdd";

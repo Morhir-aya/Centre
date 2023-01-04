@@ -36,9 +36,10 @@
             // 
             // Connect
             // 
-            this.Connect.Location = new System.Drawing.Point(197, 321);
+            this.Connect.Location = new System.Drawing.Point(263, 395);
+            this.Connect.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Connect.Name = "Connect";
-            this.Connect.Size = new System.Drawing.Size(135, 35);
+            this.Connect.Size = new System.Drawing.Size(180, 43);
             this.Connect.TabIndex = 2;
             this.Connect.Text = "Connect to Center ";
             this.Connect.UseVisualStyleBackColor = true;
@@ -47,21 +48,24 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(111, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(148, 15);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(317, 262);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.Size = new System.Drawing.Size(423, 322);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // page_de_connexion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(545, 411);
+            this.ClientSize = new System.Drawing.Size(727, 506);
             this.Controls.Add(this.Connect);
             this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "page_de_connexion";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Centre Active";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

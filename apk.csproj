@@ -87,6 +87,18 @@
     <Compile Include="FormEtudiant.designer.cs">
       <DependentUpon>FormEtudiant.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormGroupe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGroupe.Designer.cs">
+      <DependentUpon>FormGroupe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Groupe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Groupe.Designer.cs">
+      <DependentUpon>Groupe.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +118,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormEtudiant.resx">
       <DependentUpon>FormEtudiant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGroupe.resx">
+      <DependentUpon>FormGroupe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Groupe.resx">
+      <DependentUpon>Groupe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
