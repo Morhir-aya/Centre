@@ -68,6 +68,12 @@
     <Compile Include="Center.Designer.cs">
       <DependentUpon>Center.cs</DependentUpon>
     </Compile>
+    <Compile Include="CentreInfos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CentreInfos.Designer.cs">
+      <DependentUpon>CentreInfos.cs</DependentUpon>
+    </Compile>
     <Compile Include="colors.cs" />
     <Compile Include="Espace_Admin.cs">
       <SubType>Form</SubType>
@@ -86,6 +92,12 @@
     </Compile>
     <Compile Include="Etudiant.Designer.cs">
       <DependentUpon>Etudiant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCentre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCentre.Designer.cs">
+      <DependentUpon>FormCentre.cs</DependentUpon>
     </Compile>
     <Compile Include="FormEtudiant.cs">
       <SubType>Form</SubType>
@@ -164,6 +176,9 @@
     <EmbeddedResource Include="Center.resx">
       <DependentUpon>Center.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CentreInfos.resx">
+      <DependentUpon>CentreInfos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Espace_Admin.resx">
       <DependentUpon>Espace_Admin.cs</DependentUpon>
     </EmbeddedResource>
@@ -172,6 +187,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Etudiant.resx">
       <DependentUpon>Etudiant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCentre.resx">
+      <DependentUpon>FormCentre.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormEtudiant.resx">
       <DependentUpon>FormEtudiant.cs</DependentUpon>
