@@ -117,6 +117,12 @@
     <Compile Include="Matiere.Designer.cs">
       <DependentUpon>Matiere.cs</DependentUpon>
     </Compile>
+    <Compile Include="Paye_etudiant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Paye_etudiant.Designer.cs">
+      <DependentUpon>Paye_etudiant.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Center.resx">
@@ -145,6 +151,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Matiere.resx">
       <DependentUpon>Matiere.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paye_etudiant.resx">
+      <DependentUpon>Paye_etudiant.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
