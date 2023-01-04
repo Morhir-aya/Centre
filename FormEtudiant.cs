@@ -10,22 +10,25 @@ using System.Windows.Forms;
 
 namespace apk
 {
-    public partial class Etudiant : Form
+    public partial class FormEtudiant : Form
     {
-        public Etudiant()
+        public FormEtudiant()
         {
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void btnNew_Click(object sender, EventArgs e)
+        private void btnAdd_Click(object sender, EventArgs e)
         {
-            FormEtudiant form = new FormEtudiant();
-            form.ShowDialog();
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }
