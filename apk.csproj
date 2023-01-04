@@ -75,6 +75,12 @@
     <Compile Include="Espace_Admin.Designer.cs">
       <DependentUpon>Espace_Admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Espace_users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Espace_users.Designer.cs">
+      <DependentUpon>Espace_users.cs</DependentUpon>
+    </Compile>
     <Compile Include="Etudiant.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,6 +154,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Espace_Admin.resx">
       <DependentUpon>Espace_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Espace_users.resx">
+      <DependentUpon>Espace_users.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Etudiant.resx">
       <DependentUpon>Etudiant.cs</DependentUpon>
