@@ -55,7 +55,7 @@ namespace apk
 
         private void Connect_Click(object sender, EventArgs e)
         {
-            Login login = new Login();
+            Etudiant login = new Etudiant();
             login.Show();
             this.Hide();
         }

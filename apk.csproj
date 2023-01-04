@@ -75,6 +75,12 @@
     <Compile Include="Espace_Admin.Designer.cs">
       <DependentUpon>Espace_Admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Etudiant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Etudiant.Designer.cs">
+      <DependentUpon>Etudiant.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +94,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Espace_Admin.resx">
       <DependentUpon>Espace_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etudiant.resx">
+      <DependentUpon>Etudiant.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -120,6 +129,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="file.xml" />
+    <None Include="Resources\search.png" />
     <None Include="Resources\icons8-student-60.png" />
     <None Include="Resources\icons8-school-building-64.png" />
     <None Include="Resources\icons8-open-book-50.png" />
