@@ -64,7 +64,7 @@
             // 
             // panelM4
             // 
-            this.panelM4.BackColor = System.Drawing.Color.White;
+            this.panelM4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.panelM4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelM4.Controls.Add(this.btnAddM);
             this.panelM4.Controls.Add(this.labelM4);
@@ -81,7 +81,7 @@
             this.btnAddM.BackColor = System.Drawing.Color.LightSeaGreen;
             this.btnAddM.FlatAppearance.BorderSize = 0;
             this.btnAddM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddM.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddM.Font = new System.Drawing.Font("Cooper Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddM.ForeColor = System.Drawing.Color.White;
             this.btnAddM.Location = new System.Drawing.Point(53, 186);
             this.btnAddM.Name = "btnAddM";
@@ -93,10 +93,11 @@
             // labelM4
             // 
             this.labelM4.AutoSize = true;
-            this.labelM4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelM4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelM4.ForeColor = System.Drawing.Color.White;
             this.labelM4.Location = new System.Drawing.Point(49, 97);
             this.labelM4.Name = "labelM4";
-            this.labelM4.Size = new System.Drawing.Size(135, 20);
+            this.labelM4.Size = new System.Drawing.Size(143, 20);
             this.labelM4.TabIndex = 0;
             this.labelM4.Text = "Nombre d\'etudiant";
             // 
@@ -111,10 +112,11 @@
             // labelM1
             // 
             this.labelM1.AutoSize = true;
-            this.labelM1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelM1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelM1.ForeColor = System.Drawing.Color.White;
             this.labelM1.Location = new System.Drawing.Point(49, 29);
             this.labelM1.Name = "labelM1";
-            this.labelM1.Size = new System.Drawing.Size(42, 20);
+            this.labelM1.Size = new System.Drawing.Size(44, 20);
             this.labelM1.TabIndex = 0;
             this.labelM1.Text = "Nom";
             // 
@@ -130,6 +132,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.ClientSize = new System.Drawing.Size(497, 474);
             this.Controls.Add(this.panelM4);
             this.Controls.Add(this.panelM3);

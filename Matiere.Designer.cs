@@ -35,14 +35,14 @@
             this.labelM = new System.Windows.Forms.Label();
             this.panelM2 = new System.Windows.Forms.Panel();
             this.dataGridViewM = new System.Windows.Forms.DataGridView();
-            this.textSearchM = new System.Windows.Forms.TextBox();
-            this.btnNewM = new System.Windows.Forms.Button();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.textSearchM = new System.Windows.Forms.TextBox();
             this.pictureBoxM = new System.Windows.Forms.PictureBox();
+            this.btnNewM = new System.Windows.Forms.Button();
             this.panelM.SuspendLayout();
             this.panelM2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewM)).BeginInit();
@@ -76,7 +76,7 @@
             this.panelM2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelM2.BackColor = System.Drawing.Color.White;
+            this.panelM2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.panelM2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelM2.Controls.Add(this.dataGridViewM);
             this.panelM2.Controls.Add(this.textSearchM);
@@ -92,9 +92,6 @@
             this.dataGridViewM.AllowUserToAddRows = false;
             this.dataGridViewM.AllowUserToDeleteRows = false;
             this.dataGridViewM.AllowUserToResizeColumns = false;
-            this.dataGridViewM.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewM.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewM.BackgroundColor = System.Drawing.Color.White;
             this.dataGridViewM.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -117,29 +114,6 @@
             this.dataGridViewM.ShowEditingIcon = false;
             this.dataGridViewM.Size = new System.Drawing.Size(674, 226);
             this.dataGridViewM.TabIndex = 0;
-            // 
-            // textSearchM
-            // 
-            this.textSearchM.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textSearchM.Location = new System.Drawing.Point(413, 43);
-            this.textSearchM.Name = "textSearchM";
-            this.textSearchM.Size = new System.Drawing.Size(242, 27);
-            this.textSearchM.TabIndex = 2;
-            // 
-            // btnNewM
-            // 
-            this.btnNewM.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.btnNewM.FlatAppearance.BorderSize = 0;
-            this.btnNewM.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnNewM.Font = new System.Drawing.Font("Segoe UI Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNewM.ForeColor = System.Drawing.Color.White;
-            this.btnNewM.Location = new System.Drawing.Point(58, 39);
-            this.btnNewM.Name = "btnNewM";
-            this.btnNewM.Size = new System.Drawing.Size(108, 35);
-            this.btnNewM.TabIndex = 1;
-            this.btnNewM.Text = "Nouveau";
-            this.btnNewM.UseVisualStyleBackColor = false;
-            this.btnNewM.Click += new System.EventHandler(this.btnNewM_Click);
             // 
             // Column1
             // 
@@ -196,6 +170,14 @@
             this.Column8.ReadOnly = true;
             this.Column8.Text = "Supprimer";
             // 
+            // textSearchM
+            // 
+            this.textSearchM.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textSearchM.Location = new System.Drawing.Point(413, 43);
+            this.textSearchM.Name = "textSearchM";
+            this.textSearchM.Size = new System.Drawing.Size(242, 27);
+            this.textSearchM.TabIndex = 2;
+            // 
             // pictureBoxM
             // 
             this.pictureBoxM.BackColor = System.Drawing.SystemColors.Control;
@@ -208,14 +190,31 @@
             this.pictureBoxM.TabIndex = 2;
             this.pictureBoxM.TabStop = false;
             // 
+            // btnNewM
+            // 
+            this.btnNewM.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnNewM.FlatAppearance.BorderSize = 0;
+            this.btnNewM.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnNewM.Font = new System.Drawing.Font("Cooper Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNewM.ForeColor = System.Drawing.Color.White;
+            this.btnNewM.Location = new System.Drawing.Point(58, 39);
+            this.btnNewM.Name = "btnNewM";
+            this.btnNewM.Size = new System.Drawing.Size(108, 35);
+            this.btnNewM.TabIndex = 1;
+            this.btnNewM.Text = "Nouveau";
+            this.btnNewM.UseVisualStyleBackColor = false;
+            this.btnNewM.Click += new System.EventHandler(this.btnNewM_Click);
+            // 
             // Matiere
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.ClientSize = new System.Drawing.Size(800, 547);
             this.Controls.Add(this.panelM2);
             this.Controls.Add(this.panelM);
             this.Name = "Matiere";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Matiere";
             this.panelM.ResumeLayout(false);
             this.panelM.PerformLayout();

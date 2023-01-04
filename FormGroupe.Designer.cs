@@ -65,7 +65,7 @@
             // 
             // panelG4
             // 
-            this.panelG4.BackColor = System.Drawing.Color.White;
+            this.panelG4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.panelG4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelG4.Controls.Add(this.btnAddG);
             this.panelG4.Controls.Add(this.labelG4);
@@ -82,7 +82,7 @@
             this.btnAddG.BackColor = System.Drawing.Color.LightSeaGreen;
             this.btnAddG.FlatAppearance.BorderSize = 0;
             this.btnAddG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddG.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddG.Font = new System.Drawing.Font("Cooper Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddG.ForeColor = System.Drawing.Color.White;
             this.btnAddG.Location = new System.Drawing.Point(53, 186);
             this.btnAddG.Name = "btnAddG";
@@ -95,10 +95,11 @@
             // labelG4
             // 
             this.labelG4.AutoSize = true;
-            this.labelG4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelG4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelG4.ForeColor = System.Drawing.Color.White;
             this.labelG4.Location = new System.Drawing.Point(49, 97);
             this.labelG4.Name = "labelG4";
-            this.labelG4.Size = new System.Drawing.Size(135, 20);
+            this.labelG4.Size = new System.Drawing.Size(143, 20);
             this.labelG4.TabIndex = 0;
             this.labelG4.Text = "Nombre d\'etudiant";
             // 
@@ -113,10 +114,11 @@
             // labelG1
             // 
             this.labelG1.AutoSize = true;
-            this.labelG1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelG1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelG1.ForeColor = System.Drawing.Color.White;
             this.labelG1.Location = new System.Drawing.Point(49, 29);
             this.labelG1.Name = "labelG1";
-            this.labelG1.Size = new System.Drawing.Size(42, 20);
+            this.labelG1.Size = new System.Drawing.Size(44, 20);
             this.labelG1.TabIndex = 0;
             this.labelG1.Text = "Nom";
             this.labelG1.Click += new System.EventHandler(this.labelG1_Click);
@@ -133,6 +135,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.ClientSize = new System.Drawing.Size(489, 468);
             this.Controls.Add(this.panelG4);
             this.Controls.Add(this.panelG3);
