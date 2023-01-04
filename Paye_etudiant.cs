@@ -16,5 +16,11 @@ namespace apk
         {
             InitializeComponent();
         }
+
+        private void btnNewpe_Click(object sender, EventArgs e)
+        {
+            Paya_etd form = new Paya_etd();
+            form.ShowDialog();
+        }
     }
 }

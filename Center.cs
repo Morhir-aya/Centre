@@ -55,7 +55,7 @@ namespace apk
 
         private void Connect_Click(object sender, EventArgs e)
         {
-            Login login = new Login();
+            Paye_prof login = new Paye_prof();
             login.Show();
             this.Hide();
         }

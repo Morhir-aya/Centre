@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace apk
 {
-    public partial class Matiere : Form
+    public partial class Paye_pf : Form
     {
-        public Matiere()
+        public Paye_pf()
         {
             InitializeComponent();
-        }
-
-        private void btnNewM_Click(object sender, EventArgs e)
-        {
-            FormMatiere form2 = new FormMatiere();
-            form2.ShowDialog();
         }
     }
 }
