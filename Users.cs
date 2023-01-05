@@ -10,11 +10,26 @@ using System.Windows.Forms;
 
 namespace apk
 {
-    public partial class CentreInfos : Form
+    public partial class Users : Form
     {
-        public CentreInfos()
+        public Users()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelG4_Paint(object sender, PaintEventArgs e)
+        {
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -24,7 +39,7 @@ namespace apk
 
         private void btnNew_Click(object sender, EventArgs e)
         {
-            FormCentre form = new FormCentre();
+            FormUsers form = new FormUsers();
             form.ShowDialog();
         }
     }

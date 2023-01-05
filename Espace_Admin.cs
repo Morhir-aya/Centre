@@ -96,7 +96,7 @@ namespace apk
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            OpenChildForm(new Login(), sender);
+            OpenChildForm(new Groupe(), sender);
 
         }
 
@@ -109,28 +109,28 @@ namespace apk
 
         private void button3_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Login(), sender);
+            OpenChildForm(new Professeur(), sender);
 
 
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Login(), sender);
+            OpenChildForm(new Matiere(), sender);
 
 
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Login(), sender);
+            OpenChildForm(new FormCentre(), sender);
 
 
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Login(), sender);
+            OpenChildForm(new Etudiant(), sender);
 
 
         }

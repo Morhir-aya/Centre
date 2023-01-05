@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace apk
 {
-    public partial class Espace_users : Form
+    public partial class FormUsers : Form
     {
-        public Espace_users()
+        public FormUsers()
         {
             InitializeComponent();
         }

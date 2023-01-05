@@ -32,18 +32,18 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelM = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.labelM = new System.Windows.Forms.Label();
             this.panelM2 = new System.Windows.Forms.Panel();
             this.dataGridViewM = new System.Windows.Forms.DataGridView();
-            this.textSearchM = new System.Windows.Forms.TextBox();
-            this.pictureBoxM = new System.Windows.Forms.PictureBox();
-            this.btnNewM = new System.Windows.Forms.Button();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.textSearchM = new System.Windows.Forms.TextBox();
+            this.btnNewM = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBoxM = new System.Windows.Forms.PictureBox();
             this.panelM.SuspendLayout();
             this.panelM2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewM)).BeginInit();
@@ -54,35 +54,23 @@
             // 
             this.panelM.BackColor = System.Drawing.Color.LightSeaGreen;
             this.panelM.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelM.Controls.Add(this.button1);
             this.panelM.Controls.Add(this.labelM);
             this.panelM.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelM.Location = new System.Drawing.Point(0, 0);
+            this.panelM.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelM.Name = "panelM";
-            this.panelM.Size = new System.Drawing.Size(800, 129);
+            this.panelM.Size = new System.Drawing.Size(600, 105);
             this.panelM.TabIndex = 2;
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.button1.Location = new System.Drawing.Point(750, -1);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(49, 37);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "X";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // labelM
             // 
             this.labelM.AutoSize = true;
             this.labelM.Font = new System.Drawing.Font("Cooper Black", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelM.ForeColor = System.Drawing.Color.White;
-            this.labelM.Location = new System.Drawing.Point(290, 51);
+            this.labelM.Location = new System.Drawing.Point(218, 41);
+            this.labelM.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelM.Name = "labelM";
-            this.labelM.Size = new System.Drawing.Size(178, 35);
+            this.labelM.Size = new System.Drawing.Size(140, 27);
             this.labelM.TabIndex = 0;
             this.labelM.Text = "Class Infos";
             // 
@@ -97,9 +85,10 @@
             this.panelM2.Controls.Add(this.textSearchM);
             this.panelM2.Controls.Add(this.pictureBoxM);
             this.panelM2.Controls.Add(this.btnNewM);
-            this.panelM2.Location = new System.Drawing.Point(27, 153);
+            this.panelM2.Location = new System.Drawing.Point(20, 124);
+            this.panelM2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelM2.Name = "panelM2";
-            this.panelM2.Size = new System.Drawing.Size(747, 359);
+            this.panelM2.Size = new System.Drawing.Size(561, 292);
             this.panelM2.TabIndex = 3;
             // 
             // dataGridViewM
@@ -118,7 +107,8 @@
             this.Column7,
             this.Column8});
             this.dataGridViewM.GridColor = System.Drawing.Color.White;
-            this.dataGridViewM.Location = new System.Drawing.Point(40, 101);
+            this.dataGridViewM.Location = new System.Drawing.Point(30, 82);
+            this.dataGridViewM.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridViewM.MultiSelect = false;
             this.dataGridViewM.Name = "dataGridViewM";
             this.dataGridViewM.ReadOnly = true;
@@ -127,43 +117,8 @@
             this.dataGridViewM.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dataGridViewM.RowTemplate.Height = 24;
             this.dataGridViewM.ShowEditingIcon = false;
-            this.dataGridViewM.Size = new System.Drawing.Size(674, 226);
+            this.dataGridViewM.Size = new System.Drawing.Size(506, 184);
             this.dataGridViewM.TabIndex = 0;
-            // 
-            // textSearchM
-            // 
-            this.textSearchM.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textSearchM.Location = new System.Drawing.Point(413, 43);
-            this.textSearchM.Name = "textSearchM";
-            this.textSearchM.Size = new System.Drawing.Size(242, 27);
-            this.textSearchM.TabIndex = 2;
-            // 
-            // pictureBoxM
-            // 
-            this.pictureBoxM.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBoxM.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBoxM.Image = global::apk.Properties.Resources.search;
-            this.pictureBoxM.Location = new System.Drawing.Point(652, 43);
-            this.pictureBoxM.Name = "pictureBoxM";
-            this.pictureBoxM.Size = new System.Drawing.Size(46, 27);
-            this.pictureBoxM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxM.TabIndex = 2;
-            this.pictureBoxM.TabStop = false;
-            // 
-            // btnNewM
-            // 
-            this.btnNewM.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.btnNewM.FlatAppearance.BorderSize = 0;
-            this.btnNewM.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnNewM.Font = new System.Drawing.Font("Cooper Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNewM.ForeColor = System.Drawing.Color.White;
-            this.btnNewM.Location = new System.Drawing.Point(58, 39);
-            this.btnNewM.Name = "btnNewM";
-            this.btnNewM.Size = new System.Drawing.Size(108, 35);
-            this.btnNewM.TabIndex = 1;
-            this.btnNewM.Text = "New";
-            this.btnNewM.UseVisualStyleBackColor = false;
-            this.btnNewM.Click += new System.EventHandler(this.btnNewM_Click);
             // 
             // Column1
             // 
@@ -220,15 +175,63 @@
             this.Column8.ReadOnly = true;
             this.Column8.Text = "Supprimer";
             // 
+            // textSearchM
+            // 
+            this.textSearchM.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textSearchM.Location = new System.Drawing.Point(310, 35);
+            this.textSearchM.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textSearchM.Name = "textSearchM";
+            this.textSearchM.Size = new System.Drawing.Size(182, 23);
+            this.textSearchM.TabIndex = 2;
+            // 
+            // btnNewM
+            // 
+            this.btnNewM.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnNewM.FlatAppearance.BorderSize = 0;
+            this.btnNewM.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnNewM.Font = new System.Drawing.Font("Cooper Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNewM.ForeColor = System.Drawing.Color.White;
+            this.btnNewM.Location = new System.Drawing.Point(44, 32);
+            this.btnNewM.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnNewM.Name = "btnNewM";
+            this.btnNewM.Size = new System.Drawing.Size(81, 28);
+            this.btnNewM.TabIndex = 1;
+            this.btnNewM.Text = "New";
+            this.btnNewM.UseVisualStyleBackColor = false;
+            this.btnNewM.Click += new System.EventHandler(this.btnNewM_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(600, 444);
+            this.panel1.TabIndex = 3;
+            // 
+            // pictureBoxM
+            // 
+            this.pictureBoxM.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBoxM.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBoxM.Image = global::apk.Properties.Resources.search;
+            this.pictureBoxM.Location = new System.Drawing.Point(489, 35);
+            this.pictureBoxM.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxM.Name = "pictureBoxM";
+            this.pictureBoxM.Size = new System.Drawing.Size(36, 23);
+            this.pictureBoxM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxM.TabIndex = 2;
+            this.pictureBoxM.TabStop = false;
+            // 
             // Matiere
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(800, 547);
+            this.ClientSize = new System.Drawing.Size(600, 444);
             this.Controls.Add(this.panelM2);
             this.Controls.Add(this.panelM);
+            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Matiere";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Matiere";
@@ -251,11 +254,11 @@
         private System.Windows.Forms.TextBox textSearchM;
         private System.Windows.Forms.PictureBox pictureBoxM;
         private System.Windows.Forms.Button btnNewM;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewButtonColumn Column7;
         private System.Windows.Forms.DataGridViewButtonColumn Column8;
+        private System.Windows.Forms.Panel panel1;
     }
 }

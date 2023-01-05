@@ -68,24 +68,12 @@
     <Compile Include="Center.Designer.cs">
       <DependentUpon>Center.cs</DependentUpon>
     </Compile>
-    <Compile Include="CentreInfos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CentreInfos.Designer.cs">
-      <DependentUpon>CentreInfos.cs</DependentUpon>
-    </Compile>
     <Compile Include="colors.cs" />
     <Compile Include="Espace_Admin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Espace_Admin.Designer.cs">
       <DependentUpon>Espace_Admin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Espace_users.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Espace_users.Designer.cs">
-      <DependentUpon>Espace_users.cs</DependentUpon>
     </Compile>
     <Compile Include="Etudiant.cs">
       <SubType>Form</SubType>
@@ -122,6 +110,12 @@
     </Compile>
     <Compile Include="FormProfesseur.Designer.cs">
       <DependentUpon>FormProfesseur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUsers.Designer.cs">
+      <DependentUpon>FormUsers.cs</DependentUpon>
     </Compile>
     <Compile Include="Groupe.cs">
       <SubType>Form</SubType>
@@ -173,17 +167,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users.Designer.cs">
+      <DependentUpon>Users.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Center.resx">
       <DependentUpon>Center.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CentreInfos.resx">
-      <DependentUpon>CentreInfos.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Espace_Admin.resx">
       <DependentUpon>Espace_Admin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Espace_users.resx">
-      <DependentUpon>Espace_users.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Etudiant.resx">
       <DependentUpon>Etudiant.cs</DependentUpon>
@@ -202,6 +196,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormProfesseur.resx">
       <DependentUpon>FormProfesseur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUsers.resx">
+      <DependentUpon>FormUsers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Groupe.resx">
       <DependentUpon>Groupe.cs</DependentUpon>
@@ -237,6 +234,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Users.resx">
+      <DependentUpon>Users.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -32,7 +32,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelpp3 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.labelpp1 = new System.Windows.Forms.Label();
             this.panelpp4 = new System.Windows.Forms.Panel();
             this.dataGridViewpp1 = new System.Windows.Forms.DataGridView();
@@ -54,35 +53,23 @@
             // 
             this.panelpp3.BackColor = System.Drawing.Color.LightSeaGreen;
             this.panelpp3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelpp3.Controls.Add(this.button1);
             this.panelpp3.Controls.Add(this.labelpp1);
             this.panelpp3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelpp3.Location = new System.Drawing.Point(0, 0);
+            this.panelpp3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelpp3.Name = "panelpp3";
-            this.panelpp3.Size = new System.Drawing.Size(800, 129);
+            this.panelpp3.Size = new System.Drawing.Size(600, 105);
             this.panelpp3.TabIndex = 2;
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.button1.Location = new System.Drawing.Point(757, -1);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(42, 32);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "X";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // labelpp1
             // 
             this.labelpp1.AutoSize = true;
             this.labelpp1.Font = new System.Drawing.Font("Cooper Black", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelpp1.ForeColor = System.Drawing.Color.White;
-            this.labelpp1.Location = new System.Drawing.Point(289, 50);
+            this.labelpp1.Location = new System.Drawing.Point(217, 41);
+            this.labelpp1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelpp1.Name = "labelpp1";
-            this.labelpp1.Size = new System.Drawing.Size(222, 35);
+            this.labelpp1.Size = new System.Drawing.Size(175, 27);
             this.labelpp1.TabIndex = 0;
             this.labelpp1.Text = "Payment Info";
             // 
@@ -97,9 +84,10 @@
             this.panelpp4.Controls.Add(this.textSearchpp);
             this.panelpp4.Controls.Add(this.pictureBoxpp1);
             this.panelpp4.Controls.Add(this.btnNewpp);
-            this.panelpp4.Location = new System.Drawing.Point(33, 147);
+            this.panelpp4.Location = new System.Drawing.Point(25, 119);
+            this.panelpp4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelpp4.Name = "panelpp4";
-            this.panelpp4.Size = new System.Drawing.Size(731, 362);
+            this.panelpp4.Size = new System.Drawing.Size(549, 294);
             this.panelpp4.TabIndex = 3;
             // 
             // dataGridViewpp1
@@ -120,7 +108,8 @@
             this.Column7,
             this.Column8});
             this.dataGridViewpp1.GridColor = System.Drawing.SystemColors.Window;
-            this.dataGridViewpp1.Location = new System.Drawing.Point(40, 101);
+            this.dataGridViewpp1.Location = new System.Drawing.Point(30, 82);
+            this.dataGridViewpp1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridViewpp1.MultiSelect = false;
             this.dataGridViewpp1.Name = "dataGridViewpp1";
             this.dataGridViewpp1.ReadOnly = true;
@@ -129,7 +118,7 @@
             this.dataGridViewpp1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dataGridViewpp1.RowTemplate.Height = 24;
             this.dataGridViewpp1.ShowEditingIcon = false;
-            this.dataGridViewpp1.Size = new System.Drawing.Size(649, 243);
+            this.dataGridViewpp1.Size = new System.Drawing.Size(487, 197);
             this.dataGridViewpp1.TabIndex = 0;
             // 
             // Column1
@@ -192,9 +181,10 @@
             // 
             this.textSearchpp.BackColor = System.Drawing.SystemColors.Control;
             this.textSearchpp.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textSearchpp.Location = new System.Drawing.Point(362, 43);
+            this.textSearchpp.Location = new System.Drawing.Point(272, 35);
+            this.textSearchpp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textSearchpp.Name = "textSearchpp";
-            this.textSearchpp.Size = new System.Drawing.Size(242, 27);
+            this.textSearchpp.Size = new System.Drawing.Size(182, 23);
             this.textSearchpp.TabIndex = 2;
             // 
             // pictureBoxpp1
@@ -204,9 +194,10 @@
             this.pictureBoxpp1.BackColor = System.Drawing.SystemColors.Control;
             this.pictureBoxpp1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBoxpp1.Image = global::apk.Properties.Resources.search;
-            this.pictureBoxpp1.Location = new System.Drawing.Point(603, 43);
+            this.pictureBoxpp1.Location = new System.Drawing.Point(452, 35);
+            this.pictureBoxpp1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBoxpp1.Name = "pictureBoxpp1";
-            this.pictureBoxpp1.Size = new System.Drawing.Size(46, 27);
+            this.pictureBoxpp1.Size = new System.Drawing.Size(36, 23);
             this.pictureBoxpp1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxpp1.TabIndex = 2;
             this.pictureBoxpp1.TabStop = false;
@@ -218,9 +209,10 @@
             this.btnNewpp.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnNewpp.Font = new System.Drawing.Font("Cooper Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNewpp.ForeColor = System.Drawing.Color.White;
-            this.btnNewpp.Location = new System.Drawing.Point(58, 39);
+            this.btnNewpp.Location = new System.Drawing.Point(44, 32);
+            this.btnNewpp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnNewpp.Name = "btnNewpp";
-            this.btnNewpp.Size = new System.Drawing.Size(108, 35);
+            this.btnNewpp.Size = new System.Drawing.Size(81, 28);
             this.btnNewpp.TabIndex = 1;
             this.btnNewpp.Text = "New";
             this.btnNewpp.UseVisualStyleBackColor = false;
@@ -228,13 +220,14 @@
             // 
             // Paye_prof
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(800, 521);
+            this.ClientSize = new System.Drawing.Size(600, 423);
             this.Controls.Add(this.panelpp4);
             this.Controls.Add(this.panelpp3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Paye_prof";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Paye_prof";
@@ -262,6 +255,5 @@
         private System.Windows.Forms.TextBox textSearchpp;
         private System.Windows.Forms.PictureBox pictureBoxpp1;
         private System.Windows.Forms.Button btnNewpp;
-        private System.Windows.Forms.Button button1;
     }
 }

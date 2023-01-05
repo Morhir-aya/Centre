@@ -32,7 +32,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelpe3 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.labelpe1 = new System.Windows.Forms.Label();
             this.panelpe4 = new System.Windows.Forms.Panel();
             this.dataGridViewpe1 = new System.Windows.Forms.DataGridView();
@@ -54,35 +53,23 @@
             // 
             this.panelpe3.BackColor = System.Drawing.Color.LightSeaGreen;
             this.panelpe3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelpe3.Controls.Add(this.button1);
             this.panelpe3.Controls.Add(this.labelpe1);
             this.panelpe3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelpe3.Location = new System.Drawing.Point(0, 0);
+            this.panelpe3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelpe3.Name = "panelpe3";
-            this.panelpe3.Size = new System.Drawing.Size(800, 129);
+            this.panelpe3.Size = new System.Drawing.Size(600, 105);
             this.panelpe3.TabIndex = 1;
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.button1.Location = new System.Drawing.Point(757, -1);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(42, 38);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "X";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // labelpe1
             // 
             this.labelpe1.AutoSize = true;
             this.labelpe1.Font = new System.Drawing.Font("Cooper Black", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelpe1.ForeColor = System.Drawing.Color.White;
-            this.labelpe1.Location = new System.Drawing.Point(289, 50);
+            this.labelpe1.Location = new System.Drawing.Point(217, 41);
+            this.labelpe1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelpe1.Name = "labelpe1";
-            this.labelpe1.Size = new System.Drawing.Size(222, 35);
+            this.labelpe1.Size = new System.Drawing.Size(175, 27);
             this.labelpe1.TabIndex = 0;
             this.labelpe1.Text = "Payment Info";
             // 
@@ -97,9 +84,10 @@
             this.panelpe4.Controls.Add(this.textSearchpe);
             this.panelpe4.Controls.Add(this.pictureBoxpe1);
             this.panelpe4.Controls.Add(this.btnNewpe);
-            this.panelpe4.Location = new System.Drawing.Point(33, 152);
+            this.panelpe4.Location = new System.Drawing.Point(25, 124);
+            this.panelpe4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelpe4.Name = "panelpe4";
-            this.panelpe4.Size = new System.Drawing.Size(731, 374);
+            this.panelpe4.Size = new System.Drawing.Size(549, 304);
             this.panelpe4.TabIndex = 2;
             // 
             // dataGridViewpe1
@@ -120,7 +108,8 @@
             this.Column7,
             this.Column8});
             this.dataGridViewpe1.GridColor = System.Drawing.SystemColors.Window;
-            this.dataGridViewpe1.Location = new System.Drawing.Point(40, 101);
+            this.dataGridViewpe1.Location = new System.Drawing.Point(30, 82);
+            this.dataGridViewpe1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridViewpe1.MultiSelect = false;
             this.dataGridViewpe1.Name = "dataGridViewpe1";
             this.dataGridViewpe1.ReadOnly = true;
@@ -129,7 +118,7 @@
             this.dataGridViewpe1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dataGridViewpe1.RowTemplate.Height = 24;
             this.dataGridViewpe1.ShowEditingIcon = false;
-            this.dataGridViewpe1.Size = new System.Drawing.Size(649, 255);
+            this.dataGridViewpe1.Size = new System.Drawing.Size(487, 207);
             this.dataGridViewpe1.TabIndex = 0;
             // 
             // Column1
@@ -192,9 +181,10 @@
             // 
             this.textSearchpe.BackColor = System.Drawing.SystemColors.Control;
             this.textSearchpe.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textSearchpe.Location = new System.Drawing.Point(362, 43);
+            this.textSearchpe.Location = new System.Drawing.Point(272, 35);
+            this.textSearchpe.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textSearchpe.Name = "textSearchpe";
-            this.textSearchpe.Size = new System.Drawing.Size(242, 27);
+            this.textSearchpe.Size = new System.Drawing.Size(182, 23);
             this.textSearchpe.TabIndex = 2;
             // 
             // pictureBoxpe1
@@ -204,9 +194,10 @@
             this.pictureBoxpe1.BackColor = System.Drawing.SystemColors.Control;
             this.pictureBoxpe1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBoxpe1.Image = global::apk.Properties.Resources.search;
-            this.pictureBoxpe1.Location = new System.Drawing.Point(603, 43);
+            this.pictureBoxpe1.Location = new System.Drawing.Point(452, 35);
+            this.pictureBoxpe1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBoxpe1.Name = "pictureBoxpe1";
-            this.pictureBoxpe1.Size = new System.Drawing.Size(46, 27);
+            this.pictureBoxpe1.Size = new System.Drawing.Size(36, 23);
             this.pictureBoxpe1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxpe1.TabIndex = 2;
             this.pictureBoxpe1.TabStop = false;
@@ -218,9 +209,10 @@
             this.btnNewpe.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnNewpe.Font = new System.Drawing.Font("Cooper Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNewpe.ForeColor = System.Drawing.Color.White;
-            this.btnNewpe.Location = new System.Drawing.Point(58, 39);
+            this.btnNewpe.Location = new System.Drawing.Point(44, 32);
+            this.btnNewpe.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnNewpe.Name = "btnNewpe";
-            this.btnNewpe.Size = new System.Drawing.Size(108, 35);
+            this.btnNewpe.Size = new System.Drawing.Size(81, 28);
             this.btnNewpe.TabIndex = 1;
             this.btnNewpe.Text = "New";
             this.btnNewpe.UseVisualStyleBackColor = false;
@@ -228,13 +220,14 @@
             // 
             // Paye_etudiant
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(800, 549);
+            this.ClientSize = new System.Drawing.Size(600, 446);
             this.Controls.Add(this.panelpe4);
             this.Controls.Add(this.panelpe3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Paye_etudiant";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Paye_etudiant";
@@ -262,6 +255,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewButtonColumn Column7;
         private System.Windows.Forms.DataGridViewButtonColumn Column8;
-        private System.Windows.Forms.Button button1;
     }
 }

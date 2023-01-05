@@ -55,7 +55,7 @@ namespace apk
 
         private void Connect_Click(object sender, EventArgs e)
         {
-            CentreInfos login = new CentreInfos();
+            Espace_Admin login = new Espace_Admin();
             login.Show();
             this.Hide();
         }

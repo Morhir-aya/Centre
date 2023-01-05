@@ -32,7 +32,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelG = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.labelG = new System.Windows.Forms.Label();
             this.panelG2 = new System.Windows.Forms.Panel();
             this.dataGridViewG = new System.Windows.Forms.DataGridView();
@@ -42,8 +41,9 @@
             this.Column7 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.textSearchG = new System.Windows.Forms.TextBox();
-            this.pictureBoxG = new System.Windows.Forms.PictureBox();
             this.btnNewG = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBoxG = new System.Windows.Forms.PictureBox();
             this.panelG.SuspendLayout();
             this.panelG2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewG)).BeginInit();
@@ -53,35 +53,24 @@
             // panelG
             // 
             this.panelG.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.panelG.Controls.Add(this.button1);
             this.panelG.Controls.Add(this.labelG);
             this.panelG.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelG.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.panelG.Location = new System.Drawing.Point(0, 0);
+            this.panelG.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelG.Name = "panelG";
-            this.panelG.Size = new System.Drawing.Size(841, 129);
+            this.panelG.Size = new System.Drawing.Size(631, 105);
             this.panelG.TabIndex = 1;
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(801, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(40, 35);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "X";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // labelG
             // 
             this.labelG.AutoSize = true;
             this.labelG.Font = new System.Drawing.Font("Cooper Black", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelG.ForeColor = System.Drawing.Color.White;
-            this.labelG.Location = new System.Drawing.Point(302, 52);
+            this.labelG.Location = new System.Drawing.Point(226, 42);
+            this.labelG.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelG.Name = "labelG";
-            this.labelG.Size = new System.Drawing.Size(198, 35);
+            this.labelG.Size = new System.Drawing.Size(156, 27);
             this.labelG.TabIndex = 0;
             this.labelG.Text = "Group Infos";
             this.labelG.Click += new System.EventHandler(this.labelG_Click);
@@ -97,9 +86,10 @@
             this.panelG2.Controls.Add(this.textSearchG);
             this.panelG2.Controls.Add(this.pictureBoxG);
             this.panelG2.Controls.Add(this.btnNewG);
-            this.panelG2.Location = new System.Drawing.Point(35, 167);
+            this.panelG2.Location = new System.Drawing.Point(26, 136);
+            this.panelG2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelG2.Name = "panelG2";
-            this.panelG2.Size = new System.Drawing.Size(747, 380);
+            this.panelG2.Size = new System.Drawing.Size(561, 309);
             this.panelG2.TabIndex = 2;
             // 
             // dataGridViewG
@@ -121,7 +111,8 @@
             this.Column7,
             this.Column8});
             this.dataGridViewG.GridColor = System.Drawing.Color.White;
-            this.dataGridViewG.Location = new System.Drawing.Point(40, 101);
+            this.dataGridViewG.Location = new System.Drawing.Point(30, 82);
+            this.dataGridViewG.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridViewG.MultiSelect = false;
             this.dataGridViewG.Name = "dataGridViewG";
             this.dataGridViewG.ReadOnly = true;
@@ -130,7 +121,7 @@
             this.dataGridViewG.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dataGridViewG.RowTemplate.Height = 24;
             this.dataGridViewG.ShowEditingIcon = false;
-            this.dataGridViewG.Size = new System.Drawing.Size(674, 247);
+            this.dataGridViewG.Size = new System.Drawing.Size(506, 201);
             this.dataGridViewG.TabIndex = 0;
             // 
             // Column1
@@ -191,22 +182,11 @@
             // textSearchG
             // 
             this.textSearchG.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textSearchG.Location = new System.Drawing.Point(413, 43);
+            this.textSearchG.Location = new System.Drawing.Point(310, 35);
+            this.textSearchG.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textSearchG.Name = "textSearchG";
-            this.textSearchG.Size = new System.Drawing.Size(242, 27);
+            this.textSearchG.Size = new System.Drawing.Size(182, 23);
             this.textSearchG.TabIndex = 2;
-            // 
-            // pictureBoxG
-            // 
-            this.pictureBoxG.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBoxG.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBoxG.Image = global::apk.Properties.Resources.search;
-            this.pictureBoxG.Location = new System.Drawing.Point(652, 43);
-            this.pictureBoxG.Name = "pictureBoxG";
-            this.pictureBoxG.Size = new System.Drawing.Size(46, 27);
-            this.pictureBoxG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxG.TabIndex = 2;
-            this.pictureBoxG.TabStop = false;
             // 
             // btnNewG
             // 
@@ -215,23 +195,47 @@
             this.btnNewG.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnNewG.Font = new System.Drawing.Font("Cooper Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNewG.ForeColor = System.Drawing.Color.White;
-            this.btnNewG.Location = new System.Drawing.Point(58, 39);
+            this.btnNewG.Location = new System.Drawing.Point(44, 32);
+            this.btnNewG.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnNewG.Name = "btnNewG";
-            this.btnNewG.Size = new System.Drawing.Size(108, 35);
+            this.btnNewG.Size = new System.Drawing.Size(81, 28);
             this.btnNewG.TabIndex = 1;
             this.btnNewG.Text = "New";
             this.btnNewG.UseVisualStyleBackColor = false;
             this.btnNewG.Click += new System.EventHandler(this.btnNewG_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(631, 477);
+            this.panel1.TabIndex = 3;
+            // 
+            // pictureBoxG
+            // 
+            this.pictureBoxG.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBoxG.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBoxG.Image = global::apk.Properties.Resources.search;
+            this.pictureBoxG.Location = new System.Drawing.Point(489, 35);
+            this.pictureBoxG.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxG.Name = "pictureBoxG";
+            this.pictureBoxG.Size = new System.Drawing.Size(36, 23);
+            this.pictureBoxG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxG.TabIndex = 2;
+            this.pictureBoxG.TabStop = false;
+            // 
             // Groupe
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(841, 587);
+            this.ClientSize = new System.Drawing.Size(631, 477);
             this.Controls.Add(this.panelG2);
             this.Controls.Add(this.panelG);
+            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Groupe";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Groupe";
@@ -254,11 +258,11 @@
         private System.Windows.Forms.TextBox textSearchG;
         private System.Windows.Forms.PictureBox pictureBoxG;
         private System.Windows.Forms.Button btnNewG;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewButtonColumn Column7;
         private System.Windows.Forms.DataGridViewButtonColumn Column8;
+        private System.Windows.Forms.Panel panel1;
     }
 }
