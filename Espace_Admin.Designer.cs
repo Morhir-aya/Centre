@@ -48,6 +48,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1u.SuspendLayout();
             this.panelLogou.SuspendLayout();
             this.PanelTitleBaru.SuspendLayout();
@@ -82,7 +83,7 @@
             this.panel1u.Location = new System.Drawing.Point(0, 0);
             this.panel1u.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1u.Name = "panel1u";
-            this.panel1u.Size = new System.Drawing.Size(222, 680);
+            this.panel1u.Size = new System.Drawing.Size(222, 576);
             this.panel1u.TabIndex = 0;
             this.panel1u.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -208,13 +209,14 @@
             // 
             this.PanelTitleBaru.BackColor = System.Drawing.Color.LightSeaGreen;
             this.PanelTitleBaru.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanelTitleBaru.Controls.Add(this.button1);
             this.PanelTitleBaru.Controls.Add(this.button7);
             this.PanelTitleBaru.Controls.Add(this.lblTitleu);
             this.PanelTitleBaru.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelTitleBaru.Location = new System.Drawing.Point(222, 0);
             this.PanelTitleBaru.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PanelTitleBaru.Name = "PanelTitleBaru";
-            this.PanelTitleBaru.Size = new System.Drawing.Size(898, 80);
+            this.PanelTitleBaru.Size = new System.Drawing.Size(720, 80);
             this.PanelTitleBaru.TabIndex = 1;
             // 
             // button7
@@ -236,7 +238,7 @@
             this.lblTitleu.AutoSize = true;
             this.lblTitleu.Font = new System.Drawing.Font("Cooper Black", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitleu.ForeColor = System.Drawing.Color.White;
-            this.lblTitleu.Location = new System.Drawing.Point(344, 22);
+            this.lblTitleu.Location = new System.Drawing.Point(250, 22);
             this.lblTitleu.Name = "lblTitleu";
             this.lblTitleu.Size = new System.Drawing.Size(153, 27);
             this.lblTitleu.TabIndex = 2;
@@ -249,15 +251,15 @@
             this.panelDesktopPaneu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktopPaneu.Location = new System.Drawing.Point(222, 80);
             this.panelDesktopPaneu.Name = "panelDesktopPaneu";
-            this.panelDesktopPaneu.Size = new System.Drawing.Size(898, 600);
+            this.panelDesktopPaneu.Size = new System.Drawing.Size(720, 496);
             this.panelDesktopPaneu.TabIndex = 2;
             // 
             // pictureBox7
             // 
             this.pictureBox7.Image = global::apk.Properties.Resources.Best_School_in_Meerut_1__1_;
-            this.pictureBox7.Location = new System.Drawing.Point(233, 63);
+            this.pictureBox7.Location = new System.Drawing.Point(151, 54);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(399, 417);
+            this.pictureBox7.Size = new System.Drawing.Size(374, 362);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 0;
             this.pictureBox7.TabStop = false;
@@ -340,12 +342,24 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(682, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(37, 33);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_2);
+            // 
             // Espace_Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(1120, 680);
+            this.ClientSize = new System.Drawing.Size(942, 576);
             this.Controls.Add(this.panelDesktopPaneu);
             this.Controls.Add(this.PanelTitleBaru);
             this.Controls.Add(this.panel1u);
@@ -394,5 +408,6 @@
         private System.Windows.Forms.Panel panelDesktopPaneu;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.Button button1;
     }
 }

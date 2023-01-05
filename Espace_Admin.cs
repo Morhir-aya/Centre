@@ -149,5 +149,10 @@ namespace apk
         {
             this.Close();
         }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
