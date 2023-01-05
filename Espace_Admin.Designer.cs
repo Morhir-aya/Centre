@@ -93,7 +93,7 @@
             this.button5u.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5u.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5u.ForeColor = System.Drawing.SystemColors.Control;
-            this.button5u.Location = new System.Drawing.Point(3, 389);
+            this.button5u.Location = new System.Drawing.Point(3, 397);
             this.button5u.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button5u.Name = "button5u";
             this.button5u.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
@@ -109,7 +109,7 @@
             this.button4u.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4u.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4u.ForeColor = System.Drawing.SystemColors.Control;
-            this.button4u.Location = new System.Drawing.Point(3, 161);
+            this.button4u.Location = new System.Drawing.Point(3, 169);
             this.button4u.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button4u.Name = "button4u";
             this.button4u.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
@@ -125,7 +125,7 @@
             this.button6u.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6u.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6u.ForeColor = System.Drawing.SystemColors.Control;
-            this.button6u.Location = new System.Drawing.Point(3, 312);
+            this.button6u.Location = new System.Drawing.Point(3, 320);
             this.button6u.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button6u.Name = "button6u";
             this.button6u.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
@@ -141,7 +141,7 @@
             this.button3u.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3u.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3u.ForeColor = System.Drawing.SystemColors.Control;
-            this.button3u.Location = new System.Drawing.Point(3, 235);
+            this.button3u.Location = new System.Drawing.Point(3, 243);
             this.button3u.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button3u.Name = "button3u";
             this.button3u.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
@@ -157,7 +157,7 @@
             this.button2u.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2u.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2u.ForeColor = System.Drawing.SystemColors.Control;
-            this.button2u.Location = new System.Drawing.Point(3, 468);
+            this.button2u.Location = new System.Drawing.Point(3, 476);
             this.button2u.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button2u.Name = "button2u";
             this.button2u.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
@@ -173,7 +173,7 @@
             this.button1u.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1u.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1u.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1u.Location = new System.Drawing.Point(3, 82);
+            this.button1u.Location = new System.Drawing.Point(3, 90);
             this.button1u.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1u.Name = "button1u";
             this.button1u.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
@@ -268,7 +268,7 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.pictureBox4.Image = global::apk.Properties.Resources.icons8_student_60;
-            this.pictureBox4.Location = new System.Drawing.Point(6, 170);
+            this.pictureBox4.Location = new System.Drawing.Point(10, 177);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
@@ -281,7 +281,7 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.pictureBox5.Image = global::apk.Properties.Resources.icons8_school_building_64;
-            this.pictureBox5.Location = new System.Drawing.Point(6, 398);
+            this.pictureBox5.Location = new System.Drawing.Point(10, 404);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
@@ -294,7 +294,7 @@
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.pictureBox6.Image = global::apk.Properties.Resources.icons8_open_book_50;
-            this.pictureBox6.Location = new System.Drawing.Point(6, 321);
+            this.pictureBox6.Location = new System.Drawing.Point(10, 330);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
@@ -307,7 +307,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.pictureBox3.Image = global::apk.Properties.Resources.icons8_training_50;
-            this.pictureBox3.Location = new System.Drawing.Point(6, 243);
+            this.pictureBox3.Location = new System.Drawing.Point(10, 249);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
@@ -320,7 +320,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.pictureBox2.Image = global::apk.Properties.Resources.icons8_user_50;
-            this.pictureBox2.Location = new System.Drawing.Point(6, 477);
+            this.pictureBox2.Location = new System.Drawing.Point(10, 485);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
@@ -333,7 +333,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.pictureBox1.Image = global::apk.Properties.Resources.icons8_user_groups_50;
-            this.pictureBox1.Location = new System.Drawing.Point(6, 90);
+            this.pictureBox1.Location = new System.Drawing.Point(11, 98);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
