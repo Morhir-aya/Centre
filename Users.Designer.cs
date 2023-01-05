@@ -37,13 +37,14 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panelG4 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textSearch = new System.Windows.Forms.TextBox();
-            this.btnNew = new System.Windows.Forms.Button();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.textSearch = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnNew = new System.Windows.Forms.Button();
+            this.refresh = new System.Windows.Forms.Button();
             this.panelG3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -113,6 +114,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelG4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.panelG4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelG4.Controls.Add(this.refresh);
             this.panelG4.Controls.Add(this.dataGridView1);
             this.panelG4.Controls.Add(this.textSearch);
             this.panelG4.Controls.Add(this.pictureBox1);
@@ -153,32 +155,6 @@
             this.dataGridView1.ShowEditingIcon = false;
             this.dataGridView1.Size = new System.Drawing.Size(526, 203);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // textSearch
-            // 
-            this.textSearch.BackColor = System.Drawing.SystemColors.Control;
-            this.textSearch.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textSearch.Location = new System.Drawing.Point(272, 35);
-            this.textSearch.Margin = new System.Windows.Forms.Padding(2);
-            this.textSearch.Name = "textSearch";
-            this.textSearch.Size = new System.Drawing.Size(182, 23);
-            this.textSearch.TabIndex = 2;
-            // 
-            // btnNew
-            // 
-            this.btnNew.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.btnNew.FlatAppearance.BorderSize = 0;
-            this.btnNew.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnNew.Font = new System.Drawing.Font("Cooper Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNew.ForeColor = System.Drawing.Color.White;
-            this.btnNew.Location = new System.Drawing.Point(44, 32);
-            this.btnNew.Margin = new System.Windows.Forms.Padding(2);
-            this.btnNew.Name = "btnNew";
-            this.btnNew.Size = new System.Drawing.Size(81, 28);
-            this.btnNew.TabIndex = 1;
-            this.btnNew.Text = "New";
-            this.btnNew.UseVisualStyleBackColor = false;
-            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
             // Column2
             // 
@@ -226,6 +202,16 @@
             this.Column8.ReadOnly = true;
             this.Column8.Text = "Supprimer";
             // 
+            // textSearch
+            // 
+            this.textSearch.BackColor = System.Drawing.SystemColors.Control;
+            this.textSearch.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textSearch.Location = new System.Drawing.Point(272, 35);
+            this.textSearch.Margin = new System.Windows.Forms.Padding(2);
+            this.textSearch.Name = "textSearch";
+            this.textSearch.Size = new System.Drawing.Size(182, 23);
+            this.textSearch.TabIndex = 2;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -241,6 +227,37 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // btnNew
+            // 
+            this.btnNew.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnNew.FlatAppearance.BorderSize = 0;
+            this.btnNew.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnNew.Font = new System.Drawing.Font("Cooper Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNew.ForeColor = System.Drawing.Color.White;
+            this.btnNew.Location = new System.Drawing.Point(44, 32);
+            this.btnNew.Margin = new System.Windows.Forms.Padding(2);
+            this.btnNew.Name = "btnNew";
+            this.btnNew.Size = new System.Drawing.Size(81, 28);
+            this.btnNew.TabIndex = 1;
+            this.btnNew.Text = "New";
+            this.btnNew.UseVisualStyleBackColor = false;
+            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
+            // 
+            // refresh
+            // 
+            this.refresh.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.refresh.FlatAppearance.BorderSize = 0;
+            this.refresh.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.refresh.Font = new System.Drawing.Font("Cooper Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.refresh.ForeColor = System.Drawing.Color.White;
+            this.refresh.Location = new System.Drawing.Point(129, 32);
+            this.refresh.Margin = new System.Windows.Forms.Padding(2);
+            this.refresh.Name = "refresh";
+            this.refresh.Size = new System.Drawing.Size(81, 28);
+            this.refresh.TabIndex = 6;
+            this.refresh.Text = "Refresh";
+            this.refresh.UseVisualStyleBackColor = false;
             // 
             // Users
             // 
@@ -282,5 +299,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewButtonColumn Column7;
         private System.Windows.Forms.DataGridViewButtonColumn Column8;
+        private System.Windows.Forms.Button refresh;
     }
 }

@@ -45,9 +45,10 @@
             this.Column7 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.textSearchp = new System.Windows.Forms.TextBox();
+            this.pictureBox1p = new System.Windows.Forms.PictureBox();
             this.btnNewp = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1p = new System.Windows.Forms.PictureBox();
+            this.refresh = new System.Windows.Forms.Button();
             this.panelG3p.SuspendLayout();
             this.panelG4p.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1p)).BeginInit();
@@ -61,7 +62,7 @@
             this.panelG3p.Controls.Add(this.label1p);
             this.panelG3p.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelG3p.Location = new System.Drawing.Point(0, 0);
-            this.panelG3p.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelG3p.Margin = new System.Windows.Forms.Padding(2);
             this.panelG3p.Name = "panelG3p";
             this.panelG3p.Size = new System.Drawing.Size(622, 105);
             this.panelG3p.TabIndex = 1;
@@ -85,12 +86,13 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelG4p.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.panelG4p.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelG4p.Controls.Add(this.refresh);
             this.panelG4p.Controls.Add(this.dataGridView1p);
             this.panelG4p.Controls.Add(this.textSearchp);
             this.panelG4p.Controls.Add(this.pictureBox1p);
             this.panelG4p.Controls.Add(this.btnNewp);
             this.panelG4p.Location = new System.Drawing.Point(16, 120);
-            this.panelG4p.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelG4p.Margin = new System.Windows.Forms.Padding(2);
             this.panelG4p.Name = "panelG4p";
             this.panelG4p.Size = new System.Drawing.Size(592, 300);
             this.panelG4p.TabIndex = 2;
@@ -119,7 +121,7 @@
             this.Column8});
             this.dataGridView1p.GridColor = System.Drawing.SystemColors.Window;
             this.dataGridView1p.Location = new System.Drawing.Point(17, 82);
-            this.dataGridView1p.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1p.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1p.MultiSelect = false;
             this.dataGridView1p.Name = "dataGridView1p";
             this.dataGridView1p.ReadOnly = true;
@@ -219,34 +221,10 @@
             this.textSearchp.BackColor = System.Drawing.SystemColors.Control;
             this.textSearchp.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textSearchp.Location = new System.Drawing.Point(272, 35);
-            this.textSearchp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textSearchp.Margin = new System.Windows.Forms.Padding(2);
             this.textSearchp.Name = "textSearchp";
             this.textSearchp.Size = new System.Drawing.Size(182, 23);
             this.textSearchp.TabIndex = 2;
-            // 
-            // btnNewp
-            // 
-            this.btnNewp.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.btnNewp.FlatAppearance.BorderSize = 0;
-            this.btnNewp.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnNewp.Font = new System.Drawing.Font("Cooper Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNewp.ForeColor = System.Drawing.Color.White;
-            this.btnNewp.Location = new System.Drawing.Point(44, 32);
-            this.btnNewp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnNewp.Name = "btnNewp";
-            this.btnNewp.Size = new System.Drawing.Size(81, 28);
-            this.btnNewp.TabIndex = 1;
-            this.btnNewp.Text = "New";
-            this.btnNewp.UseVisualStyleBackColor = false;
-            this.btnNewp.Click += new System.EventHandler(this.btnNewp_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(622, 438);
-            this.panel1.TabIndex = 4;
             // 
             // pictureBox1p
             // 
@@ -263,6 +241,45 @@
             this.pictureBox1p.TabIndex = 2;
             this.pictureBox1p.TabStop = false;
             // 
+            // btnNewp
+            // 
+            this.btnNewp.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnNewp.FlatAppearance.BorderSize = 0;
+            this.btnNewp.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnNewp.Font = new System.Drawing.Font("Cooper Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNewp.ForeColor = System.Drawing.Color.White;
+            this.btnNewp.Location = new System.Drawing.Point(44, 32);
+            this.btnNewp.Margin = new System.Windows.Forms.Padding(2);
+            this.btnNewp.Name = "btnNewp";
+            this.btnNewp.Size = new System.Drawing.Size(81, 28);
+            this.btnNewp.TabIndex = 1;
+            this.btnNewp.Text = "New";
+            this.btnNewp.UseVisualStyleBackColor = false;
+            this.btnNewp.Click += new System.EventHandler(this.btnNewp_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(622, 438);
+            this.panel1.TabIndex = 4;
+            // 
+            // refresh
+            // 
+            this.refresh.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.refresh.FlatAppearance.BorderSize = 0;
+            this.refresh.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.refresh.Font = new System.Drawing.Font("Cooper Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.refresh.ForeColor = System.Drawing.Color.White;
+            this.refresh.Location = new System.Drawing.Point(129, 32);
+            this.refresh.Margin = new System.Windows.Forms.Padding(2);
+            this.refresh.Name = "refresh";
+            this.refresh.Size = new System.Drawing.Size(81, 28);
+            this.refresh.TabIndex = 4;
+            this.refresh.Text = "Refresh";
+            this.refresh.UseVisualStyleBackColor = false;
+            // 
             // Professeur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -273,7 +290,7 @@
             this.Controls.Add(this.panelG3p);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Professeur";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Professeur";
@@ -306,5 +323,6 @@
         private System.Windows.Forms.PictureBox pictureBox1p;
         private System.Windows.Forms.Button btnNewp;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button refresh;
     }
 }

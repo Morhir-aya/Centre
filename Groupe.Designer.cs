@@ -41,9 +41,10 @@
             this.Column7 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.textSearchG = new System.Windows.Forms.TextBox();
+            this.pictureBoxG = new System.Windows.Forms.PictureBox();
             this.btnNewG = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBoxG = new System.Windows.Forms.PictureBox();
+            this.refresh = new System.Windows.Forms.Button();
             this.panelG.SuspendLayout();
             this.panelG2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewG)).BeginInit();
@@ -57,7 +58,7 @@
             this.panelG.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelG.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.panelG.Location = new System.Drawing.Point(0, 0);
-            this.panelG.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelG.Margin = new System.Windows.Forms.Padding(2);
             this.panelG.Name = "panelG";
             this.panelG.Size = new System.Drawing.Size(631, 105);
             this.panelG.TabIndex = 1;
@@ -82,12 +83,13 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelG2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.panelG2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelG2.Controls.Add(this.refresh);
             this.panelG2.Controls.Add(this.dataGridViewG);
             this.panelG2.Controls.Add(this.textSearchG);
             this.panelG2.Controls.Add(this.pictureBoxG);
             this.panelG2.Controls.Add(this.btnNewG);
             this.panelG2.Location = new System.Drawing.Point(26, 136);
-            this.panelG2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelG2.Margin = new System.Windows.Forms.Padding(2);
             this.panelG2.Name = "panelG2";
             this.panelG2.Size = new System.Drawing.Size(561, 309);
             this.panelG2.TabIndex = 2;
@@ -112,7 +114,7 @@
             this.Column8});
             this.dataGridViewG.GridColor = System.Drawing.Color.White;
             this.dataGridViewG.Location = new System.Drawing.Point(30, 82);
-            this.dataGridViewG.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridViewG.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridViewG.MultiSelect = false;
             this.dataGridViewG.Name = "dataGridViewG";
             this.dataGridViewG.ReadOnly = true;
@@ -183,10 +185,23 @@
             // 
             this.textSearchG.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textSearchG.Location = new System.Drawing.Point(310, 35);
-            this.textSearchG.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textSearchG.Margin = new System.Windows.Forms.Padding(2);
             this.textSearchG.Name = "textSearchG";
             this.textSearchG.Size = new System.Drawing.Size(182, 23);
             this.textSearchG.TabIndex = 2;
+            // 
+            // pictureBoxG
+            // 
+            this.pictureBoxG.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBoxG.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBoxG.Image = global::apk.Properties.Resources.search;
+            this.pictureBoxG.Location = new System.Drawing.Point(489, 35);
+            this.pictureBoxG.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxG.Name = "pictureBoxG";
+            this.pictureBoxG.Size = new System.Drawing.Size(36, 23);
+            this.pictureBoxG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxG.TabIndex = 2;
+            this.pictureBoxG.TabStop = false;
             // 
             // btnNewG
             // 
@@ -196,7 +211,7 @@
             this.btnNewG.Font = new System.Drawing.Font("Cooper Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNewG.ForeColor = System.Drawing.Color.White;
             this.btnNewG.Location = new System.Drawing.Point(44, 32);
-            this.btnNewG.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnNewG.Margin = new System.Windows.Forms.Padding(2);
             this.btnNewG.Name = "btnNewG";
             this.btnNewG.Size = new System.Drawing.Size(81, 28);
             this.btnNewG.TabIndex = 1;
@@ -212,18 +227,20 @@
             this.panel1.Size = new System.Drawing.Size(631, 477);
             this.panel1.TabIndex = 3;
             // 
-            // pictureBoxG
+            // refresh
             // 
-            this.pictureBoxG.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBoxG.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBoxG.Image = global::apk.Properties.Resources.search;
-            this.pictureBoxG.Location = new System.Drawing.Point(489, 35);
-            this.pictureBoxG.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBoxG.Name = "pictureBoxG";
-            this.pictureBoxG.Size = new System.Drawing.Size(36, 23);
-            this.pictureBoxG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxG.TabIndex = 2;
-            this.pictureBoxG.TabStop = false;
+            this.refresh.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.refresh.FlatAppearance.BorderSize = 0;
+            this.refresh.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.refresh.Font = new System.Drawing.Font("Cooper Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.refresh.ForeColor = System.Drawing.Color.White;
+            this.refresh.Location = new System.Drawing.Point(129, 32);
+            this.refresh.Margin = new System.Windows.Forms.Padding(2);
+            this.refresh.Name = "refresh";
+            this.refresh.Size = new System.Drawing.Size(81, 28);
+            this.refresh.TabIndex = 4;
+            this.refresh.Text = "Refresh";
+            this.refresh.UseVisualStyleBackColor = false;
             // 
             // Groupe
             // 
@@ -235,7 +252,7 @@
             this.Controls.Add(this.panelG);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Groupe";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Groupe";
@@ -264,5 +281,6 @@
         private System.Windows.Forms.DataGridViewButtonColumn Column7;
         private System.Windows.Forms.DataGridViewButtonColumn Column8;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button refresh;
     }
 }

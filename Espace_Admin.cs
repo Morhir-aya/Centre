@@ -102,7 +102,7 @@ namespace apk
 
         private void button2_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Login(), sender);
+            OpenChildForm(new Users(), sender);
 
 
         }
@@ -153,6 +153,11 @@ namespace apk
         private void button1_Click_2(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void PanelTitleBaru_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -43,6 +43,7 @@
             this.textSearchpe = new System.Windows.Forms.TextBox();
             this.pictureBoxpe1 = new System.Windows.Forms.PictureBox();
             this.btnNewpe = new System.Windows.Forms.Button();
+            this.refresh = new System.Windows.Forms.Button();
             this.panelpe3.SuspendLayout();
             this.panelpe4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewpe1)).BeginInit();
@@ -56,7 +57,7 @@
             this.panelpe3.Controls.Add(this.labelpe1);
             this.panelpe3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelpe3.Location = new System.Drawing.Point(0, 0);
-            this.panelpe3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelpe3.Margin = new System.Windows.Forms.Padding(2);
             this.panelpe3.Name = "panelpe3";
             this.panelpe3.Size = new System.Drawing.Size(600, 105);
             this.panelpe3.TabIndex = 1;
@@ -80,12 +81,13 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelpe4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.panelpe4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelpe4.Controls.Add(this.refresh);
             this.panelpe4.Controls.Add(this.dataGridViewpe1);
             this.panelpe4.Controls.Add(this.textSearchpe);
             this.panelpe4.Controls.Add(this.pictureBoxpe1);
             this.panelpe4.Controls.Add(this.btnNewpe);
             this.panelpe4.Location = new System.Drawing.Point(25, 124);
-            this.panelpe4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelpe4.Margin = new System.Windows.Forms.Padding(2);
             this.panelpe4.Name = "panelpe4";
             this.panelpe4.Size = new System.Drawing.Size(549, 304);
             this.panelpe4.TabIndex = 2;
@@ -109,7 +111,7 @@
             this.Column8});
             this.dataGridViewpe1.GridColor = System.Drawing.SystemColors.Window;
             this.dataGridViewpe1.Location = new System.Drawing.Point(30, 82);
-            this.dataGridViewpe1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridViewpe1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridViewpe1.MultiSelect = false;
             this.dataGridViewpe1.Name = "dataGridViewpe1";
             this.dataGridViewpe1.ReadOnly = true;
@@ -182,7 +184,7 @@
             this.textSearchpe.BackColor = System.Drawing.SystemColors.Control;
             this.textSearchpe.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textSearchpe.Location = new System.Drawing.Point(272, 35);
-            this.textSearchpe.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textSearchpe.Margin = new System.Windows.Forms.Padding(2);
             this.textSearchpe.Name = "textSearchpe";
             this.textSearchpe.Size = new System.Drawing.Size(182, 23);
             this.textSearchpe.TabIndex = 2;
@@ -195,7 +197,7 @@
             this.pictureBoxpe1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBoxpe1.Image = global::apk.Properties.Resources.search;
             this.pictureBoxpe1.Location = new System.Drawing.Point(452, 35);
-            this.pictureBoxpe1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBoxpe1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBoxpe1.Name = "pictureBoxpe1";
             this.pictureBoxpe1.Size = new System.Drawing.Size(36, 23);
             this.pictureBoxpe1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -210,13 +212,28 @@
             this.btnNewpe.Font = new System.Drawing.Font("Cooper Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNewpe.ForeColor = System.Drawing.Color.White;
             this.btnNewpe.Location = new System.Drawing.Point(44, 32);
-            this.btnNewpe.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnNewpe.Margin = new System.Windows.Forms.Padding(2);
             this.btnNewpe.Name = "btnNewpe";
             this.btnNewpe.Size = new System.Drawing.Size(81, 28);
             this.btnNewpe.TabIndex = 1;
             this.btnNewpe.Text = "New";
             this.btnNewpe.UseVisualStyleBackColor = false;
             this.btnNewpe.Click += new System.EventHandler(this.btnNewpe_Click);
+            // 
+            // refresh
+            // 
+            this.refresh.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.refresh.FlatAppearance.BorderSize = 0;
+            this.refresh.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.refresh.Font = new System.Drawing.Font("Cooper Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.refresh.ForeColor = System.Drawing.Color.White;
+            this.refresh.Location = new System.Drawing.Point(129, 32);
+            this.refresh.Margin = new System.Windows.Forms.Padding(2);
+            this.refresh.Name = "refresh";
+            this.refresh.Size = new System.Drawing.Size(81, 28);
+            this.refresh.TabIndex = 4;
+            this.refresh.Text = "Refresh";
+            this.refresh.UseVisualStyleBackColor = false;
             // 
             // Paye_etudiant
             // 
@@ -227,7 +244,7 @@
             this.Controls.Add(this.panelpe4);
             this.Controls.Add(this.panelpe3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Paye_etudiant";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Paye_etudiant";
@@ -255,5 +272,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewButtonColumn Column7;
         private System.Windows.Forms.DataGridViewButtonColumn Column8;
+        private System.Windows.Forms.Button refresh;
     }
 }

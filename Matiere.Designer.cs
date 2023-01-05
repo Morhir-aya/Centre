@@ -41,9 +41,10 @@
             this.Column7 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.textSearchM = new System.Windows.Forms.TextBox();
+            this.pictureBoxM = new System.Windows.Forms.PictureBox();
             this.btnNewM = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBoxM = new System.Windows.Forms.PictureBox();
+            this.refresh = new System.Windows.Forms.Button();
             this.panelM.SuspendLayout();
             this.panelM2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewM)).BeginInit();
@@ -57,7 +58,7 @@
             this.panelM.Controls.Add(this.labelM);
             this.panelM.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelM.Location = new System.Drawing.Point(0, 0);
-            this.panelM.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelM.Margin = new System.Windows.Forms.Padding(2);
             this.panelM.Name = "panelM";
             this.panelM.Size = new System.Drawing.Size(600, 105);
             this.panelM.TabIndex = 2;
@@ -81,12 +82,13 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelM2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.panelM2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelM2.Controls.Add(this.refresh);
             this.panelM2.Controls.Add(this.dataGridViewM);
             this.panelM2.Controls.Add(this.textSearchM);
             this.panelM2.Controls.Add(this.pictureBoxM);
             this.panelM2.Controls.Add(this.btnNewM);
             this.panelM2.Location = new System.Drawing.Point(20, 124);
-            this.panelM2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelM2.Margin = new System.Windows.Forms.Padding(2);
             this.panelM2.Name = "panelM2";
             this.panelM2.Size = new System.Drawing.Size(561, 292);
             this.panelM2.TabIndex = 3;
@@ -108,7 +110,7 @@
             this.Column8});
             this.dataGridViewM.GridColor = System.Drawing.Color.White;
             this.dataGridViewM.Location = new System.Drawing.Point(30, 82);
-            this.dataGridViewM.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridViewM.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridViewM.MultiSelect = false;
             this.dataGridViewM.Name = "dataGridViewM";
             this.dataGridViewM.ReadOnly = true;
@@ -179,10 +181,23 @@
             // 
             this.textSearchM.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textSearchM.Location = new System.Drawing.Point(310, 35);
-            this.textSearchM.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textSearchM.Margin = new System.Windows.Forms.Padding(2);
             this.textSearchM.Name = "textSearchM";
             this.textSearchM.Size = new System.Drawing.Size(182, 23);
             this.textSearchM.TabIndex = 2;
+            // 
+            // pictureBoxM
+            // 
+            this.pictureBoxM.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBoxM.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBoxM.Image = global::apk.Properties.Resources.search;
+            this.pictureBoxM.Location = new System.Drawing.Point(489, 35);
+            this.pictureBoxM.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxM.Name = "pictureBoxM";
+            this.pictureBoxM.Size = new System.Drawing.Size(36, 23);
+            this.pictureBoxM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxM.TabIndex = 2;
+            this.pictureBoxM.TabStop = false;
             // 
             // btnNewM
             // 
@@ -192,7 +207,7 @@
             this.btnNewM.Font = new System.Drawing.Font("Cooper Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNewM.ForeColor = System.Drawing.Color.White;
             this.btnNewM.Location = new System.Drawing.Point(44, 32);
-            this.btnNewM.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnNewM.Margin = new System.Windows.Forms.Padding(2);
             this.btnNewM.Name = "btnNewM";
             this.btnNewM.Size = new System.Drawing.Size(81, 28);
             this.btnNewM.TabIndex = 1;
@@ -208,18 +223,20 @@
             this.panel1.Size = new System.Drawing.Size(600, 444);
             this.panel1.TabIndex = 3;
             // 
-            // pictureBoxM
+            // refresh
             // 
-            this.pictureBoxM.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBoxM.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBoxM.Image = global::apk.Properties.Resources.search;
-            this.pictureBoxM.Location = new System.Drawing.Point(489, 35);
-            this.pictureBoxM.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBoxM.Name = "pictureBoxM";
-            this.pictureBoxM.Size = new System.Drawing.Size(36, 23);
-            this.pictureBoxM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxM.TabIndex = 2;
-            this.pictureBoxM.TabStop = false;
+            this.refresh.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.refresh.FlatAppearance.BorderSize = 0;
+            this.refresh.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.refresh.Font = new System.Drawing.Font("Cooper Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.refresh.ForeColor = System.Drawing.Color.White;
+            this.refresh.Location = new System.Drawing.Point(129, 32);
+            this.refresh.Margin = new System.Windows.Forms.Padding(2);
+            this.refresh.Name = "refresh";
+            this.refresh.Size = new System.Drawing.Size(81, 28);
+            this.refresh.TabIndex = 4;
+            this.refresh.Text = "Refresh";
+            this.refresh.UseVisualStyleBackColor = false;
             // 
             // Matiere
             // 
@@ -231,7 +248,7 @@
             this.Controls.Add(this.panelM);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Matiere";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Matiere";
@@ -260,5 +277,6 @@
         private System.Windows.Forms.DataGridViewButtonColumn Column7;
         private System.Windows.Forms.DataGridViewButtonColumn Column8;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button refresh;
     }
 }

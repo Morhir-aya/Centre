@@ -218,6 +218,7 @@
             this.PanelTitleBaru.Name = "PanelTitleBaru";
             this.PanelTitleBaru.Size = new System.Drawing.Size(720, 80);
             this.PanelTitleBaru.TabIndex = 1;
+            this.PanelTitleBaru.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelTitleBaru_Paint);
             // 
             // button7
             // 
