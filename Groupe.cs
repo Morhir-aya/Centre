@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -31,6 +32,16 @@ namespace apk
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void refresh_Click(object sender, EventArgs e)
+        {
+            Login.connection.Open();
+            SqlDataAdapter dt = new SqlDataAdapter("select * from Groupe; ", Login.connection);
+            DataTable data= new DataTable();
+            dt.Fill(data);
+            Login.connection.Close();   
+            dataGridViewG.DataSource=data;
         }
     }
 }

@@ -23,6 +23,11 @@ namespace apk
         {
             InitializeComponent();
             random = new Random();
+            if (!Login.statut)
+            {
+                   this.user.Hide();
+                   this.pictureBox2.Hide();
+            }
         }
         private Color SelectThemeColor()
         {

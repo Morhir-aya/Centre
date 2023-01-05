@@ -17,8 +17,9 @@ namespace apk
     public partial class Login : Form
     {
       
-        private  string CN = "Data Source=DESKTOP-BAEPGCE;Initial Catalog=Center;Integrated Security=True";
+        private  string CN = "Data Source=DESKTOP-BAEPGCE;Initial Catalog=NewCentre3;Integrated Security=True";
         public static SqlConnection connection=new SqlConnection();
+        public static bool statut;
         public Login()
         {
             InitializeComponent();
@@ -41,7 +42,7 @@ namespace apk
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string requet = String.Format("select * from login where username='{0}' and passwod='{1}';", textBox1.Text, textBox2.Text);
+           /* string requet = String.Format("select username,password,statut from utilisateur where username='{0}' and password='{1}';", textBox1.Text, textBox2.Text);
             connection.ConnectionString = CN;
             Stopwatch watch = new Stopwatch(); //using system.diagnostics
             watch.Start();
@@ -58,6 +59,7 @@ namespace apk
                 Data.Fill(dataTable);
                 if (dataTable.Rows.Count == 1 && (textBox1 != null && textBox2 != null))
                 {
+                    statut = bool.Parse(dataTable.Rows[0][2].ToString());
                     Espace_Admin espace_Admin = new Espace_Admin();
                     espace_Admin.Show();
                     this.Hide();
@@ -73,7 +75,7 @@ namespace apk
             catch (Exception)
             {
                 MessageBox.Show("check your internet ");
-            }
+            }*/
             
         }
 
@@ -89,7 +91,48 @@ namespace apk
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("hadi hiya");
+            string requet = String.Format("select username,password,statut from utilisateur where username='{0}' and password='{1}';", textBox1.Text, textBox2.Text);
+            connection.ConnectionString = CN;
+            
+            try
+            {
+                try {Stopwatch watch = new Stopwatch(); //using system.diagnostics
+                watch.Start();
+                WebClient web = new WebClient();
+                byte[] bytes = web.DownloadData("https://www.google.com");
+                watch.Stop();
+                double sec = watch.Elapsed.TotalSeconds;
+                double speed = bytes.Count() / sec;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                
+                connection.Open();
+                SqlDataAdapter Data = new SqlDataAdapter(requet, connection);
+                DataTable dataTable = new DataTable();
+                Data.Fill(dataTable);
+                if (dataTable.Rows.Count == 1 && (textBox1 != null && textBox2 != null))
+                {
+                    statut = dataTable.Rows[0][2].ToString().ToLower()=="true"?true:false;    
+                    Espace_Admin espace_Admin = new Espace_Admin();
+                    espace_Admin.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    textBox1.Clear();
+                    textBox2.Clear();
+                    MessageBox.Show("Connection unsuccessful");
+                }
+                connection.Close();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("check your connection");
+            }
+
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -100,6 +143,11 @@ namespace apk
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

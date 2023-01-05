@@ -29,37 +29,37 @@
         private void InitializeComponent()
         {
             this.panel1u = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.button5u = new System.Windows.Forms.Button();
             this.button4u = new System.Windows.Forms.Button();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.button6u = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.button3u = new System.Windows.Forms.Button();
-            this.button2u = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.user = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1u = new System.Windows.Forms.Button();
             this.panelLogou = new System.Windows.Forms.Panel();
             this.label1u = new System.Windows.Forms.Label();
             this.PanelTitleBaru = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.lblTitleu = new System.Windows.Forms.Label();
             this.panelDesktopPaneu = new System.Windows.Forms.Panel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1u.SuspendLayout();
-            this.panelLogou.SuspendLayout();
-            this.PanelTitleBaru.SuspendLayout();
-            this.panelDesktopPaneu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelLogou.SuspendLayout();
+            this.PanelTitleBaru.SuspendLayout();
+            this.panelDesktopPaneu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1u
@@ -75,7 +75,7 @@
             this.panel1u.Controls.Add(this.pictureBox3);
             this.panel1u.Controls.Add(this.button3u);
             this.panel1u.Controls.Add(this.pictureBox2);
-            this.panel1u.Controls.Add(this.button2u);
+            this.panel1u.Controls.Add(this.user);
             this.panel1u.Controls.Add(this.pictureBox1);
             this.panel1u.Controls.Add(this.button1u);
             this.panel1u.Controls.Add(this.panelLogou);
@@ -86,6 +86,32 @@
             this.panel1u.Size = new System.Drawing.Size(222, 576);
             this.panel1u.TabIndex = 0;
             this.panel1u.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.pictureBox4.Image = global::apk.Properties.Resources.icons8_student_60;
+            this.pictureBox4.Location = new System.Drawing.Point(10, 177);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.pictureBox4.Size = new System.Drawing.Size(42, 52);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 14;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.pictureBox5.Image = global::apk.Properties.Resources.icons8_school_building_64;
+            this.pictureBox5.Location = new System.Drawing.Point(10, 404);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.pictureBox5.Size = new System.Drawing.Size(42, 52);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 12;
+            this.pictureBox5.TabStop = false;
             // 
             // button5u
             // 
@@ -119,6 +145,19 @@
             this.button4u.UseVisualStyleBackColor = false;
             this.button4u.Click += new System.EventHandler(this.button4_Click);
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.pictureBox6.Image = global::apk.Properties.Resources.icons8_open_book_50;
+            this.pictureBox6.Location = new System.Drawing.Point(10, 330);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.pictureBox6.Size = new System.Drawing.Size(42, 52);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 10;
+            this.pictureBox6.TabStop = false;
+            // 
             // button6u
             // 
             this.button6u.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
@@ -134,6 +173,19 @@
             this.button6u.Text = "Courses";
             this.button6u.UseVisualStyleBackColor = false;
             this.button6u.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.pictureBox3.Image = global::apk.Properties.Resources.icons8_training_50;
+            this.pictureBox3.Location = new System.Drawing.Point(10, 249);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.pictureBox3.Size = new System.Drawing.Size(42, 52);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 8;
+            this.pictureBox3.TabStop = false;
             // 
             // button3u
             // 
@@ -151,21 +203,47 @@
             this.button3u.UseVisualStyleBackColor = false;
             this.button3u.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button2u
+            // pictureBox2
             // 
-            this.button2u.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.button2u.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2u.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2u.ForeColor = System.Drawing.SystemColors.Control;
-            this.button2u.Location = new System.Drawing.Point(3, 476);
-            this.button2u.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button2u.Name = "button2u";
-            this.button2u.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.button2u.Size = new System.Drawing.Size(207, 71);
-            this.button2u.TabIndex = 3;
-            this.button2u.Text = "Users";
-            this.button2u.UseVisualStyleBackColor = false;
-            this.button2u.Click += new System.EventHandler(this.button2_Click);
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.pictureBox2.Image = global::apk.Properties.Resources.icons8_user_50;
+            this.pictureBox2.Location = new System.Drawing.Point(10, 485);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.pictureBox2.Size = new System.Drawing.Size(42, 52);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
+            // 
+            // user
+            // 
+            this.user.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.user.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.user.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.user.ForeColor = System.Drawing.SystemColors.Control;
+            this.user.Location = new System.Drawing.Point(3, 476);
+            this.user.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.user.Name = "user";
+            this.user.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.user.Size = new System.Drawing.Size(207, 71);
+            this.user.TabIndex = 3;
+            this.user.Text = "Users";
+            this.user.UseVisualStyleBackColor = false;
+            this.user.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.pictureBox1.Image = global::apk.Properties.Resources.icons8_user_groups_50;
+            this.pictureBox1.Location = new System.Drawing.Point(11, 98);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.pictureBox1.Size = new System.Drawing.Size(42, 52);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // button1u
             // 
@@ -220,13 +298,25 @@
             this.PanelTitleBaru.TabIndex = 1;
             this.PanelTitleBaru.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelTitleBaru_Paint);
             // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(682, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(37, 33);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_2);
+            // 
             // button7
             // 
             this.button7.FlatAppearance.BorderSize = 0;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.button7.Location = new System.Drawing.Point(865, 0);
-            this.button7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button7.Margin = new System.Windows.Forms.Padding(2);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(32, 29);
             this.button7.TabIndex = 3;
@@ -265,96 +355,6 @@
             this.pictureBox7.TabIndex = 0;
             this.pictureBox7.TabStop = false;
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.pictureBox4.Image = global::apk.Properties.Resources.icons8_student_60;
-            this.pictureBox4.Location = new System.Drawing.Point(10, 177);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.pictureBox4.Size = new System.Drawing.Size(42, 52);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 14;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.pictureBox5.Image = global::apk.Properties.Resources.icons8_school_building_64;
-            this.pictureBox5.Location = new System.Drawing.Point(10, 404);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.pictureBox5.Size = new System.Drawing.Size(42, 52);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 12;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.pictureBox6.Image = global::apk.Properties.Resources.icons8_open_book_50;
-            this.pictureBox6.Location = new System.Drawing.Point(10, 330);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.pictureBox6.Size = new System.Drawing.Size(42, 52);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 10;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.pictureBox3.Image = global::apk.Properties.Resources.icons8_training_50;
-            this.pictureBox3.Location = new System.Drawing.Point(10, 249);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.pictureBox3.Size = new System.Drawing.Size(42, 52);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 8;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.pictureBox2.Image = global::apk.Properties.Resources.icons8_user_50;
-            this.pictureBox2.Location = new System.Drawing.Point(10, 485);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.pictureBox2.Size = new System.Drawing.Size(42, 52);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.pictureBox1.Image = global::apk.Properties.Resources.icons8_user_groups_50;
-            this.pictureBox1.Location = new System.Drawing.Point(11, 98);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.pictureBox1.Size = new System.Drawing.Size(42, 52);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(682, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(37, 33);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "X";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_2);
-            // 
             // Espace_Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -371,18 +371,18 @@
             this.Text = "Espace_Admin";
             this.Load += new System.EventHandler(this.Espace_Admin_Load);
             this.panel1u.ResumeLayout(false);
-            this.panelLogou.ResumeLayout(false);
-            this.panelLogou.PerformLayout();
-            this.PanelTitleBaru.ResumeLayout(false);
-            this.PanelTitleBaru.PerformLayout();
-            this.panelDesktopPaneu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelLogou.ResumeLayout(false);
+            this.panelLogou.PerformLayout();
+            this.PanelTitleBaru.ResumeLayout(false);
+            this.PanelTitleBaru.PerformLayout();
+            this.panelDesktopPaneu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -396,7 +396,7 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button button3u;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button button2u;
+        private System.Windows.Forms.Button user;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Button button5u;
         private System.Windows.Forms.PictureBox pictureBox6;
