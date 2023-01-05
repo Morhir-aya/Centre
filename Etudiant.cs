@@ -33,5 +33,11 @@ namespace apk
         {
             this.Close();
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Paye_etudiant form = new Paye_etudiant();
+            form.ShowDialog();
+        }
     }
 }
