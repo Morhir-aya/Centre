@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -37,6 +38,24 @@ namespace apk
         {
             Paye_prof form = new Paye_prof();
             form.ShowDialog();
+        }
+
+        private void refresh_Click(object sender, EventArgs e)
+        {
+            Login.connection.Open();
+            SqlDataAdapter dt = new SqlDataAdapter("select * from Professeur; ", Login.connection);
+            DataTable data = new DataTable();
+            dt.Fill(data);
+            Login.connection.Close();
+            dataGridView1p.DataSource = data;
+        }
+
+        private void pictureBox1p_Click(object sender, EventArgs e)
+        {
+            SqlDataAdapter data = new SqlDataAdapter("select * from Professeur where id_prof=" + int.Parse(textSearchp.Text) + ";", Login.connection);
+            DataTable dt = new DataTable();
+            data.Fill(dt);
+            dataGridView1p.DataSource = dt;
         }
     }
 }

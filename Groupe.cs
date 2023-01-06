@@ -56,7 +56,6 @@ namespace apk
                 update = true;
                 up = int.Parse(dataGridViewG.Rows[e.RowIndex].Cells[2].Value.ToString());
                 frm.ShowDialog();
-           
               
 
                 
@@ -65,7 +64,7 @@ namespace apk
             }
             if(e.ColumnIndex == 1)
             {
-
+                
                  string sql = string.Format("delete from groupe where id_groupe = {0};",dataGridViewG.Rows[e.RowIndex].Cells[2].Value );
                 data.DeleteCommand = new SqlCommand(sql, Login.connection);
                 data.DeleteCommand.ExecuteNonQuery();
@@ -81,6 +80,16 @@ namespace apk
              DataTable dt = new DataTable();    
             data.Fill(dt);
             dataGridViewG.DataSource=dt;
+        }
+
+        private void dataGridViewG_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void textSearchG_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

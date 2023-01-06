@@ -49,10 +49,11 @@
             this.panelG3.Controls.Add(this.lbltextG);
             this.panelG3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelG3.Location = new System.Drawing.Point(0, 0);
-            this.panelG3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelG3.Margin = new System.Windows.Forms.Padding(2);
             this.panelG3.Name = "panelG3";
             this.panelG3.Size = new System.Drawing.Size(367, 113);
             this.panelG3.TabIndex = 1;
+            this.panelG3.Paint += new System.Windows.Forms.PaintEventHandler(this.panelG3_Paint);
             // 
             // button1
             // 
@@ -60,7 +61,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.button1.Location = new System.Drawing.Point(334, -1);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(32, 28);
             this.button1.TabIndex = 3;
@@ -91,7 +92,7 @@
             this.panelG4.Controls.Add(this.labelG1);
             this.panelG4.Controls.Add(this.textNomG);
             this.panelG4.Location = new System.Drawing.Point(39, 137);
-            this.panelG4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelG4.Margin = new System.Windows.Forms.Padding(2);
             this.panelG4.Name = "panelG4";
             this.panelG4.Size = new System.Drawing.Size(290, 217);
             this.panelG4.TabIndex = 2;
@@ -104,7 +105,7 @@
             this.btnAddG.Font = new System.Drawing.Font("Cooper Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddG.ForeColor = System.Drawing.Color.White;
             this.btnAddG.Location = new System.Drawing.Point(108, 154);
-            this.btnAddG.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddG.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddG.Name = "btnAddG";
             this.btnAddG.Size = new System.Drawing.Size(77, 32);
             this.btnAddG.TabIndex = 6;
@@ -128,7 +129,7 @@
             // 
             this.textPrenomG.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textPrenomG.Location = new System.Drawing.Point(54, 98);
-            this.textPrenomG.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textPrenomG.Margin = new System.Windows.Forms.Padding(2);
             this.textPrenomG.Name = "textPrenomG";
             this.textPrenomG.Size = new System.Drawing.Size(190, 23);
             this.textPrenomG.TabIndex = 2;
@@ -150,7 +151,7 @@
             // 
             this.textNomG.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textNomG.Location = new System.Drawing.Point(54, 43);
-            this.textNomG.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textNomG.Margin = new System.Windows.Forms.Padding(2);
             this.textNomG.Name = "textNomG";
             this.textNomG.Size = new System.Drawing.Size(190, 23);
             this.textNomG.TabIndex = 1;
@@ -165,7 +166,7 @@
             this.Controls.Add(this.panelG4);
             this.Controls.Add(this.panelG3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormGroupe";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormGroupe";

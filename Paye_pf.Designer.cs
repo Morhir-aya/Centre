@@ -49,17 +49,19 @@
             this.panelpp3.Controls.Add(this.lbltextpp);
             this.panelpp3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelpp3.Location = new System.Drawing.Point(0, 0);
+            this.panelpp3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelpp3.Name = "panelpp3";
-            this.panelpp3.Size = new System.Drawing.Size(483, 139);
+            this.panelpp3.Size = new System.Drawing.Size(362, 113);
             this.panelpp3.TabIndex = 4;
             // 
             // button1
             // 
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(436, -1);
+            this.button1.Location = new System.Drawing.Point(327, -1);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(46, 39);
+            this.button1.Size = new System.Drawing.Size(34, 32);
             this.button1.TabIndex = 6;
             this.button1.Text = "X";
             this.button1.UseVisualStyleBackColor = true;
@@ -70,9 +72,10 @@
             this.lbltextpp.AutoSize = true;
             this.lbltextpp.Font = new System.Drawing.Font("Cooper Black", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltextpp.ForeColor = System.Drawing.Color.White;
-            this.lbltextpp.Location = new System.Drawing.Point(106, 54);
+            this.lbltextpp.Location = new System.Drawing.Point(80, 44);
+            this.lbltextpp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbltextpp.Name = "lbltextpp";
-            this.lbltextpp.Size = new System.Drawing.Size(240, 35);
+            this.lbltextpp.Size = new System.Drawing.Size(191, 27);
             this.lbltextpp.TabIndex = 0;
             this.lbltextpp.Text = "Add Payement";
             // 
@@ -85,9 +88,10 @@
             this.panelpp4.Controls.Add(this.textPrenompp);
             this.panelpp4.Controls.Add(this.labelpp1);
             this.panelpp4.Controls.Add(this.textNompp);
-            this.panelpp4.Location = new System.Drawing.Point(50, 158);
+            this.panelpp4.Location = new System.Drawing.Point(38, 128);
+            this.panelpp4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelpp4.Name = "panelpp4";
-            this.panelpp4.Size = new System.Drawing.Size(386, 267);
+            this.panelpp4.Size = new System.Drawing.Size(290, 217);
             this.panelpp4.TabIndex = 5;
             // 
             // btnAddpp
@@ -97,30 +101,34 @@
             this.btnAddpp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddpp.Font = new System.Drawing.Font("Cooper Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddpp.ForeColor = System.Drawing.Color.White;
-            this.btnAddpp.Location = new System.Drawing.Point(136, 185);
+            this.btnAddpp.Location = new System.Drawing.Point(102, 150);
+            this.btnAddpp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddpp.Name = "btnAddpp";
-            this.btnAddpp.Size = new System.Drawing.Size(103, 39);
+            this.btnAddpp.Size = new System.Drawing.Size(77, 32);
             this.btnAddpp.TabIndex = 6;
             this.btnAddpp.Text = "Add";
             this.btnAddpp.UseVisualStyleBackColor = false;
+            this.btnAddpp.Click += new System.EventHandler(this.btnAddpp_Click);
             // 
             // labelpp4
             // 
             this.labelpp4.AutoSize = true;
             this.labelpp4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelpp4.ForeColor = System.Drawing.Color.White;
-            this.labelpp4.Location = new System.Drawing.Point(61, 100);
+            this.labelpp4.Location = new System.Drawing.Point(46, 81);
+            this.labelpp4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelpp4.Name = "labelpp4";
-            this.labelpp4.Size = new System.Drawing.Size(56, 20);
+            this.labelpp4.Size = new System.Drawing.Size(44, 15);
             this.labelpp4.TabIndex = 0;
             this.labelpp4.Text = "Month";
             // 
             // textPrenompp
             // 
             this.textPrenompp.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textPrenompp.Location = new System.Drawing.Point(65, 123);
+            this.textPrenompp.Location = new System.Drawing.Point(49, 100);
+            this.textPrenompp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textPrenompp.Name = "textPrenompp";
-            this.textPrenompp.Size = new System.Drawing.Size(252, 27);
+            this.textPrenompp.Size = new System.Drawing.Size(190, 23);
             this.textPrenompp.TabIndex = 2;
             // 
             // labelpp1
@@ -128,29 +136,32 @@
             this.labelpp1.AutoSize = true;
             this.labelpp1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelpp1.ForeColor = System.Drawing.Color.White;
-            this.labelpp1.Location = new System.Drawing.Point(61, 32);
+            this.labelpp1.Location = new System.Drawing.Point(46, 26);
+            this.labelpp1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelpp1.Name = "labelpp1";
-            this.labelpp1.Size = new System.Drawing.Size(83, 20);
+            this.labelpp1.Size = new System.Drawing.Size(67, 15);
             this.labelpp1.TabIndex = 0;
             this.labelpp1.Text = "Id_Teacher";
             // 
             // textNompp
             // 
             this.textNompp.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textNompp.Location = new System.Drawing.Point(65, 55);
+            this.textNompp.Location = new System.Drawing.Point(49, 45);
+            this.textNompp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textNompp.Name = "textNompp";
-            this.textNompp.Size = new System.Drawing.Size(252, 27);
+            this.textNompp.Size = new System.Drawing.Size(190, 23);
             this.textNompp.TabIndex = 1;
             // 
             // Paye_pf
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(483, 450);
+            this.ClientSize = new System.Drawing.Size(362, 366);
             this.Controls.Add(this.panelpp4);
             this.Controls.Add(this.panelpp3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Paye_pf";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Paye_pf";

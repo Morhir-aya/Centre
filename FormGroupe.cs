@@ -35,6 +35,7 @@ namespace apk
                 ds.UpdateCommand.ExecuteNonQuery();
                 Login.connection.Close();
                 this.Close();
+                Groupe.update= false;
 
             }
             else
@@ -68,6 +69,11 @@ namespace apk
         }
 
         private void textNomG_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelG3_Paint(object sender, PaintEventArgs e)
         {
 
         }

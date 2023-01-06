@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelG = new System.Windows.Forms.Panel();
             this.labelG = new System.Windows.Forms.Label();
             this.panelG2 = new System.Windows.Forms.Panel();
             this.refresh = new System.Windows.Forms.Button();
             this.dataGridViewG = new System.Windows.Forms.DataGridView();
+            this.modify = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.textSearchG = new System.Windows.Forms.TextBox();
             this.pictureBoxG = new System.Windows.Forms.PictureBox();
             this.btnNewG = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.modify = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panelG.SuspendLayout();
             this.panelG2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewG)).BeginInit();
@@ -134,6 +134,40 @@
             this.dataGridViewG.Size = new System.Drawing.Size(506, 201);
             this.dataGridViewG.TabIndex = 0;
             this.dataGridViewG.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewG_CellClick);
+            this.dataGridViewG.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewG_CellContentClick);
+            // 
+            // modify
+            // 
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            this.modify.DefaultCellStyle = dataGridViewCellStyle3;
+            this.modify.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.modify.HeaderText = "";
+            this.modify.MinimumWidth = 6;
+            this.modify.Name = "modify";
+            this.modify.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.modify.Text = "Update";
+            this.modify.UseColumnTextForButtonValue = true;
+            // 
+            // Column8
+            // 
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.LightSeaGreen;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.LightSeaGreen;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            this.Column8.DefaultCellStyle = dataGridViewCellStyle4;
+            this.Column8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Column8.HeaderText = "";
+            this.Column8.MinimumWidth = 6;
+            this.Column8.Name = "Column8";
+            this.Column8.Text = "Delete";
+            this.Column8.UseColumnTextForButtonValue = true;
             // 
             // textSearchG
             // 
@@ -143,6 +177,7 @@
             this.textSearchG.Name = "textSearchG";
             this.textSearchG.Size = new System.Drawing.Size(182, 23);
             this.textSearchG.TabIndex = 2;
+            this.textSearchG.TextChanged += new System.EventHandler(this.textSearchG_TextChanged);
             // 
             // pictureBoxG
             // 
@@ -181,39 +216,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(631, 477);
             this.panel1.TabIndex = 3;
-            // 
-            // modify
-            // 
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
-            this.modify.DefaultCellStyle = dataGridViewCellStyle7;
-            this.modify.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.modify.HeaderText = "";
-            this.modify.MinimumWidth = 6;
-            this.modify.Name = "modify";
-            this.modify.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.modify.Text = "modify";
-            this.modify.UseColumnTextForButtonValue = true;
-            // 
-            // Column8
-            // 
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.LightSeaGreen;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.LightSeaGreen;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
-            this.Column8.DefaultCellStyle = dataGridViewCellStyle8;
-            this.Column8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Column8.HeaderText = "";
-            this.Column8.MinimumWidth = 6;
-            this.Column8.Name = "Column8";
-            this.Column8.Text = "Delete";
-            this.Column8.UseColumnTextForButtonValue = true;
             // 
             // Groupe
             // 
