@@ -96,18 +96,14 @@ namespace apk
             
             try
             {
-                try {Stopwatch watch = new Stopwatch(); //using system.diagnostics
+                Stopwatch watch = new Stopwatch(); //using system.diagnostics
                 watch.Start();
                 WebClient web = new WebClient();
                 byte[] bytes = web.DownloadData("https://www.google.com");
                 watch.Stop();
                 double sec = watch.Elapsed.TotalSeconds;
                 double speed = bytes.Count() / sec;
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
+                
                 
                 connection.Open();
                 SqlDataAdapter Data = new SqlDataAdapter(requet, connection);

@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelG = new System.Windows.Forms.Panel();
             this.labelG = new System.Windows.Forms.Label();
             this.panelG2 = new System.Windows.Forms.Panel();
@@ -39,7 +39,7 @@
             this.pictureBoxG = new System.Windows.Forms.PictureBox();
             this.btnNewG = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Column7 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.modify = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panelG.SuspendLayout();
             this.panelG2.SuspendLayout();
@@ -109,7 +109,7 @@
             // dataGridViewG
             // 
             this.dataGridViewG.AllowUserToAddRows = false;
-            this.dataGridViewG.AllowUserToDeleteRows = false;
+            this.dataGridViewG.AllowUserToOrderColumns = true;
             this.dataGridViewG.AllowUserToResizeColumns = false;
             this.dataGridViewG.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
@@ -119,14 +119,13 @@
             this.dataGridViewG.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewG.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column7,
+            this.modify,
             this.Column8});
             this.dataGridViewG.GridColor = System.Drawing.Color.White;
             this.dataGridViewG.Location = new System.Drawing.Point(30, 82);
             this.dataGridViewG.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridViewG.MultiSelect = false;
             this.dataGridViewG.Name = "dataGridViewG";
-            this.dataGridViewG.ReadOnly = true;
             this.dataGridViewG.RowHeadersVisible = false;
             this.dataGridViewG.RowHeadersWidth = 51;
             this.dataGridViewG.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
@@ -134,6 +133,7 @@
             this.dataGridViewG.ShowEditingIcon = false;
             this.dataGridViewG.Size = new System.Drawing.Size(506, 201);
             this.dataGridViewG.TabIndex = 0;
+            this.dataGridViewG.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewG_CellClick);
             // 
             // textSearchG
             // 
@@ -156,6 +156,7 @@
             this.pictureBoxG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxG.TabIndex = 2;
             this.pictureBoxG.TabStop = false;
+            this.pictureBoxG.Click += new System.EventHandler(this.pictureBoxG_Click);
             // 
             // btnNewG
             // 
@@ -181,37 +182,38 @@
             this.panel1.Size = new System.Drawing.Size(631, 477);
             this.panel1.TabIndex = 3;
             // 
-            // Column7
+            // modify
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            this.Column7.DefaultCellStyle = dataGridViewCellStyle1;
-            this.Column7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Column7.HeaderText = "";
-            this.Column7.MinimumWidth = 6;
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
-            this.Column7.Text = "Modifier";
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
+            this.modify.DefaultCellStyle = dataGridViewCellStyle7;
+            this.modify.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.modify.HeaderText = "";
+            this.modify.MinimumWidth = 6;
+            this.modify.Name = "modify";
+            this.modify.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.modify.Text = "modify";
+            this.modify.UseColumnTextForButtonValue = true;
             // 
             // Column8
             // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.LightSeaGreen;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.LightSeaGreen;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            this.Column8.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.LightSeaGreen;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.LightSeaGreen;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
+            this.Column8.DefaultCellStyle = dataGridViewCellStyle8;
             this.Column8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Column8.HeaderText = "";
             this.Column8.MinimumWidth = 6;
             this.Column8.Name = "Column8";
-            this.Column8.ReadOnly = true;
-            this.Column8.Text = "Supprimer";
+            this.Column8.Text = "Delete";
+            this.Column8.UseColumnTextForButtonValue = true;
             // 
             // Groupe
             // 
@@ -248,7 +250,7 @@
         private System.Windows.Forms.Button btnNewG;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button refresh;
-        private System.Windows.Forms.DataGridViewButtonColumn Column7;
+        private System.Windows.Forms.DataGridViewButtonColumn modify;
         private System.Windows.Forms.DataGridViewButtonColumn Column8;
     }
 }
